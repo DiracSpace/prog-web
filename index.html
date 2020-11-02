@@ -6,7 +6,7 @@
     <title>ITSM</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link data-rh="true" rel="icon" href="img/cropped-favicon-180x180.png">
+    <link data-rh="true" rel="icon" href="img/cropped-favicon-180x180.png" />
     <meta name="authors" content="aqui metemos los nombres del equipo" />
     <meta name="keywords" content="aqui metemos palabras clave del contenido" />
     <meta name="description" content="aqui metemos la descripción del proyecto" />
@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pontano+Sans" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Display" />
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/4be3e68216.js" crossorigin="anonymous"></script>
 </head>
@@ -27,7 +29,7 @@
     <!-- start of page -->
     <header>
         <!-- covid-19 message -->
-        <nav class="navbar navbar-default covid-message" role="navigation">
+        <nav class="navbar navbar-default covid-message shadow mb-5" role="navigation">
             <div class="container">
                 <div class="navbar-header">
                     <div class="navbar-brand">
@@ -39,7 +41,7 @@
         </nav>
         <!-- end -->
         <!-- navbar options -->
-        <nav class="navbar navbar-default options-bar" role="navigation">
+        <nav class="navbar navbar-default options-bar shadow mb-5" role="navigation">
             <div class="container">
                 <div class="navbar-header">
                     <div class="navbar-brand">
@@ -78,21 +80,79 @@
         <!-- end -->
     </header>
     <!-- end -->
-    <hr />
-    <!-- text -->
-    <div class="container message">
-        <p>
-            Antes de echar un vistazo a la información de la carrera
-        </p>
-        <span>¡Ve nuestra infografía
-            para saber si la carrera es adecuada para ti!</span>
-    </div>
-    <!-- end -->
-    <!-- button banner -->
-    <div class="container btn-banner">
-        <button type="button" class="btn btn-secondary btn-lg btn-block"></button>
-    </div>
-    <!-- end -->
+    <hr class="separator" />
+    <section class="message-btn">
+        <!-- text -->
+        <div class="container message">
+            <p>
+                Antes de echar un vistazo a la información de la carrera
+            </p>
+            <span>¡Ve nuestra infografía
+                para saber si la carrera es adecuada para ti!</span>
+        </div>
+        <!-- end -->
+        <!-- button banner -->
+        <div class="container btn-banner">
+            <button type="button" class="btn btn-secondary btn-lg btn-block shadow p-3 mb-5 bg-white rounded"></button>
+        </div>
+        <!-- end -->
+    </section>
+    <section class="vision-perfgraduates">
+        <!-- image and text -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 gen-obj">
+                    <img class="img-fluid" src="img/88106556_1077763242594963_6922714303002836992_o.jpg" />
+                    <p>
+                        Formar profesionistas en Ingeniería en Sistemas Computacionales capaces de identificar y
+                        delimitar problemas relacionados con el procesamiento de información, la innovación y el
+                        desarrollo tecnológico, estructurar e implementar sistemas y soluciones, con habilidades de
+                        autoaprendizaje y trabajo en equipo, apoyados en herramientas, estándares y métodos científicos,
+                        conscientes del impacto de su ejercicio profesional en la sociedad.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+        <!-- img-text -->
+        <div class="img-text"></div>
+        <!-- end -->
+    </section>
+    <section class="workfield">
+        <div class="container title">
+            <h3>Campo Laboral</h3>
+            <hr />
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 img-columns">
+                    <img class="img-thumbnail" src="img/accenture-logo-edited.png" />
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 img-columns">
+                    <img class="img-thumbnail" src="img/ibm-logo-edited.png" />
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img class="img-thumbnail" src="img/unnamed-removebg-preview.png" />
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img class="img-thumbnail" src="img/NEORIS.Logo-Black.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer font-small blue pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase">¿Tienes dudas?</h5>
+                    <a href="#">Resuelve aquí</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        </div>
+    </footer>
     <!-- external js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

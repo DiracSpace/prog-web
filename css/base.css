@@ -36,6 +36,7 @@ h1.jumbo-text {
 
 p.lead span {
     background-color: white;
+    text-transform: uppercase;
     font-family: "Barlow";
     color: #112849;
     font-size: 2em;
@@ -43,7 +44,7 @@ p.lead span {
 }
 
 /* body */
-hr {
+hr.separator {
     background-color: #112849;
     height: 0.2vw;
     width: 10vw;
@@ -65,7 +66,48 @@ div.btn-banner {
 }
 
 div.btn-banner button {
-    background: url(/img/btnBanner.png);
+    box-shadow: 0px 0px 0px 5px #112849 !important;
+    background: url(/img/btnBanner.png) no-repeat;
+    transition: box-shadow 0.3s linear;
+    background-size: cover;
+    margin: 0.5em;
     width: 100%;
     height: 226px;
+}
+
+div.btn-banner button:hover { box-shadow: 0px 0px 0px 10px #112849 !important; }
+
+div.gen-obj { padding-top: 2vw; }
+
+div.gen-obj img {
+    margin-right: 10px;
+    width: 525px;
+    height: 235px;
+    float: left;
+}
+
+div.gen-obj p {
+    text-align: justify;
+    font-family: "Pontano Sans";
+    font-size: 1.2em;
+}
+
+div.img-text {
+    background-color: darkgray;
+    margin-top: 2vw;
+    padding-top: 3vw;
+    height: 420px;
+    width: 100%;
+}
+
+div.title {
+    text-align: center;
+    padding-top: 2vw;
+}
+
+div.title hr {
+    font-family: "Red Hat Display";
+    padding-bottom: 2vw;
+    height: 0.2vw;
+    width: 30vw;
 }
