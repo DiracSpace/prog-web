@@ -1,0 +1,184 @@
+/* navbar */
+
+.navbar {
+    float: left;
+}
+
+nav.covid-message {
+    background: gray;
+    width: 20%;
+}
+
+nav.options-bar {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(17, 40, 73, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    overflow: hidden;
+    width: 80%;
+}
+
+a.nav-link {
+    color: #ffffff;
+}
+
+ul.submenu-options {
+    display: flex;
+}
+
+ul.submenu-options li {
+    list-style-type: none;
+}
+
+div.navbar-brand {
+    color: #ffffff;
+}
+
+
+/* header */
+
+div.jumbotron {
+    background-image: url("/img/120888772_1278861439151808_1272664044669923535_o.jpg");
+    background-size: cover;
+}
+
+h1.jumbo-text {
+    font-family: "Bebas Neue";
+    color: #ffffff;
+    margin-top: 10vw;
+    padding-top: 24%;
+    font-size: 4rem;
+    height: 5em;
+}
+
+p.lead span {
+    background-color: white;
+    text-transform: uppercase;
+    font-family: "Barlow";
+    color: #112849;
+    font-size: 2em;
+    font-style: bold;
+}
+
+
+/* body */
+
+hr.separator {
+    background-color: #112849;
+    height: 0.2vw;
+    width: 10vw;
+}
+
+div.message {
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 1.2em;
+    font-style: normal;
+}
+
+div.message p {
+    font-weight: lighter;
+}
+
+div.message span {
+    font-weight: bolder;
+}
+
+div.btn-banner {
+    text-align: center;
+    padding-top: 5vw;
+}
+
+div.btn-banner button {
+    /*box-shadow: 0px 0px 0px 5px #112849 !important;*/
+    background: url(/img/btnBanner.png) no-repeat;
+    transition: box-shadow 0.3s linear;
+    background-size: cover;
+    margin: 0.5em;
+    width: 100%;
+    height: 226px;
+    position: relative;
+    padding: 1em 1.5em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    /*margin: 1em 0.8em;*/
+}
+
+div.btn-banner button::after,
+div.btn-banner button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 7px solid;
+    transition: all 0.5s ease;
+    border-radius: 2px;
+}
+
+div.btn-banner button::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #112849;
+    border-right-color: #112849;
+}
+
+div.btn-banner button::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #112849;
+    border-left-color: #112849;
+}
+
+div.btn-banner button:hover:after,
+div.btn-banner button:hover:before {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*
+div.btn-banner button:hover {
+    box-shadow: 0px 0px 0px 10px #112849 !important;
+}*/
+
+div.gen-obj {
+    padding-top: 2vw;
+}
+
+div.gen-obj img {
+    margin-right: 10px;
+    width: 525px;
+    height: 235px;
+    float: left;
+}
+
+div.gen-obj p {
+    text-align: justify;
+    font-family: "Pontano Sans";
+    font-size: 1.2em;
+}
+
+div.img-text {
+    background-color: darkgray;
+    margin-top: 2vw;
+    padding-top: 3vw;
+    height: 420px;
+    width: 100%;
+}
+
+div.title {
+    text-align: center;
+    padding-top: 2vw;
+}
+
+div.title hr {
+    font-family: "Red Hat Display";
+    padding-bottom: 2vw;
+    height: 0.2vw;
+    width: 30vw;
+}
