@@ -179,13 +179,21 @@ div.img-text {
 }
 
 div.title {
+    padding-bottom: 3vw;
     text-align: center;
     padding-top: 2vw;
 }
 
+div.title h3 {
+    font-size: 2.5em;
+}
+
+div.title p {
+    font-size: 1.2em;
+}
+
 div.title hr {
     font-family: "Red Hat Display";
-    padding-bottom: 2vw;
     height: 0.2vw;
     width: 30vw;
 }
