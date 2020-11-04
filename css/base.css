@@ -74,6 +74,7 @@ div.message {
 div.message p { font-weight: lighter; }
 div.message span { font-weight: bolder; }
 
+/* button */
 div.btn-banner {
     text-align: center;
     padding-top: 5vw;
