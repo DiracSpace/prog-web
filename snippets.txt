@@ -20,3 +20,54 @@ https://github.com/DiracSpace/prog-web
                 </div>
             </div>
 
+
+div.container-body {
+    display: flex;
+}
+
+div.colum1 {
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 100px;
+}
+
+div.colum1 h4 {
+    font-size: 22px;
+}
+
+div.colum1 a {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+div.colum2 {
+    text-align: center;
+    margin-right: 500px;
+    margin-left: 500px;
+}
+
+div.colum2 p {
+    text-align: right;
+    font-size: 22px;
+}
+
+div.colum2 img {
+    width: 36px;
+    height: 36px;
+}
+
+div.colum3 {
+    margin-left: 100px;
+    margin-right: 100;
+}
+
+div.colum3 h4 {
+    font-size: 22px;
+}
+
+div.colum3 a {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 20px;
+}

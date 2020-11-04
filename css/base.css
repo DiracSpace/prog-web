@@ -1,9 +1,10 @@
 /* navbar */
+
 .navbar {
     float: left;
 }
 
-nav.covid-message { 
+nav.covid-message {
     background: gray;
     position: relative;
     display: inline-block;
@@ -23,17 +24,30 @@ nav.covid-message::after {
 }
 
 nav.options-bar {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,40,73,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(17, 40, 73, 1) 35%, rgba(0, 212, 255, 1) 100%);
     overflow: hidden;
     width: 80%;
 }
 
-a.nav-link { color:  #ffffff; }
-ul.submenu-options { display: flex; }
-ul.submenu-options li { list-style-type: none; }
-div.navbar-brand { color:  #ffffff; }
+a.nav-link {
+    color: #ffffff;
+}
+
+ul.submenu-options {
+    display: flex;
+}
+
+ul.submenu-options li {
+    list-style-type: none;
+}
+
+div.navbar-brand {
+    color: #ffffff;
+}
+
 
 /* header */
+
 div.jumbotron {
     background-image: url("/img/120888772_1278861439151808_1272664044669923535_o.jpg");
     background-size: cover;
@@ -57,7 +71,9 @@ p.lead span {
     font-style: bold;
 }
 
+
 /* body */
+
 hr.separator {
     background-color: #112849;
     height: 0.2vw;
@@ -71,8 +87,13 @@ div.message {
     font-style: normal;
 }
 
-div.message p { font-weight: lighter; }
-div.message span { font-weight: bolder; }
+div.message p {
+    font-weight: lighter;
+}
+
+div.message span {
+    font-weight: bolder;
+}
 
 /* button */
 div.btn-banner {
@@ -132,7 +153,9 @@ div.btn-banner button:hover:before {
     height: 100%;
 }
 
-div.gen-obj { padding-top: 2vw; }
+div.gen-obj {
+    padding-top: 2vw;
+}
 
 div.gen-obj img {
     margin-right: 10px;
@@ -151,7 +174,7 @@ div.img-text {
     background-color: darkgray;
     margin-top: 2vw;
     padding-top: 3vw;
-    height: 420px;
+    height: 600px;
     width: 100%;
 }
 
@@ -165,4 +188,25 @@ div.title hr {
     padding-bottom: 2vw;
     height: 0.2vw;
     width: 30vw;
+}
+
+section.workfield {
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+
+span.square {
+    background: #112849;
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+/* footer */
+footer {
+    background-color: #112849 !important;
+}
+
+a.questions-suggestions {
+    text-decoration: underline;
 }
