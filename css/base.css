@@ -218,3 +218,8 @@ footer {
 a.questions-suggestions {
     text-decoration: underline;
 }
+
+/* modal */
+div.modal-header h5 {
+    font-size: 1.8em;
+}
