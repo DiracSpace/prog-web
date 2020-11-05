@@ -1,28 +1,27 @@
 /* navbar */
+<<<<<<< HEAD
 
 .navbar {
+=======
+.navbar { 
+    margin-bottom: 0% !important;
+    font-weight: 200 !important;
+>>>>>>> origin/v0.0.4-jayson-01
     float: left;
 }
 
 nav.covid-message {
     background: gray;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    width: 20%;
+    height: 5% !important;
+    width: 30%;
 }
 
-nav.covid-message::after {
-    content: '';
-    position: absolute;
-    -webkit-transform-origin: 100% 0;
-    -ms-transform-origin: 100% 0;
-    transform-origin: 100% 0;
-    -webkit-transform: skew(-45deg);
-    -ms-transform: skew(-45deg);
-    transform: skew(-45deg);
+nav.options-bar {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(17, 40, 73, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    width: 70%;
 }
 
+<<<<<<< HEAD
 nav.options-bar {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(17, 40, 73, 1) 35%, rgba(0, 212, 255, 1) 100%);
     overflow: hidden;
@@ -45,6 +44,16 @@ div.navbar-brand {
     color: #ffffff;
 }
 
+=======
+ul.submenu-options { 
+    margin-bottom: 0% !important;
+    display: flex; 
+}
+
+a.nav-link { color: #ffffff; }
+ul.submenu-options li { list-style-type: none; }
+div.navbar-brand { color: #ffffff; }
+>>>>>>> origin/v0.0.4-jayson-01
 
 /* header */
 
@@ -95,6 +104,7 @@ div.message span {
     font-weight: bolder;
 }
 
+/* button */
 div.btn-banner {
     text-align: center;
     padding-top: 5vw;
@@ -152,10 +162,14 @@ div.btn-banner button:hover:before {
     height: 100%;
 }
 
+<<<<<<< HEAD
 div.gen-obj {
     padding-top: 2vw;
 }
 
+=======
+div.gen-obj { padding-top: 2vw; }
+>>>>>>> origin/v0.0.4-jayson-01
 div.gen-obj img {
     margin-right: 10px;
     width: 525px;
@@ -173,22 +187,26 @@ div.img-text {
     background-color: darkgray;
     margin-top: 2vw;
     padding-top: 3vw;
-    height: 420px;
+    height: 600px;
     width: 100%;
 }
 
 div.title {
+    padding-bottom: 3vw;
     text-align: center;
     padding-top: 2vw;
 }
 
+div.title h3 { font-size: 2.5em; }
+div.title p { font-size: 1.2em; }
+
 div.title hr {
     font-family: "Red Hat Display";
-    padding-bottom: 2vw;
     height: 0.2vw;
     width: 30vw;
 }
 
+<<<<<<< HEAD
 footer {
     width: 100%;
     background: #112849;
@@ -246,3 +264,23 @@ footer {
     color: #fff;
     margin-top: 20px;
 }
+=======
+section.workfield {
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+
+span.square {
+    background: #112849;
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+/* footer */
+footer { background-color: #112849 !important; }
+a.questions-suggestions { text-decoration: underline; }
+
+/* modal */
+div.modal-header h5 { font-size: 1.8em; }
+>>>>>>> origin/v0.0.4-jayson-01
