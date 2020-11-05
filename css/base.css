@@ -1,53 +1,31 @@
 /* navbar */
-
-.navbar {
+.navbar { 
+    margin-bottom: 0% !important;
+    font-weight: 200 !important;
     float: left;
 }
 
 nav.covid-message {
     background: gray;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    width: 20%;
-}
-
-nav.covid-message::after {
-    content: '';
-    position: absolute;
-    -webkit-transform-origin: 100% 0;
-    -ms-transform-origin: 100% 0;
-    transform-origin: 100% 0;
-    -webkit-transform: skew(-45deg);
-    -ms-transform: skew(-45deg);
-    transform: skew(-45deg);
+    height: 5% !important;
+    width: 30%;
 }
 
 nav.options-bar {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(17, 40, 73, 1) 35%, rgba(0, 212, 255, 1) 100%);
-    overflow: hidden;
-    width: 80%;
+    width: 70%;
 }
 
-a.nav-link {
-    color: #ffffff;
+ul.submenu-options { 
+    margin-bottom: 0% !important;
+    display: flex; 
 }
 
-ul.submenu-options {
-    display: flex;
-}
-
-ul.submenu-options li {
-    list-style-type: none;
-}
-
-div.navbar-brand {
-    color: #ffffff;
-}
-
+a.nav-link { color: #ffffff; }
+ul.submenu-options li { list-style-type: none; }
+div.navbar-brand { color: #ffffff; }
 
 /* header */
-
 div.jumbotron {
     background-image: url("/img/120888772_1278861439151808_1272664044669923535_o.jpg");
     background-size: cover;
@@ -87,13 +65,8 @@ div.message {
     font-style: normal;
 }
 
-div.message p {
-    font-weight: lighter;
-}
-
-div.message span {
-    font-weight: bolder;
-}
+div.message p { font-weight: lighter; }
+div.message span { font-weight: bolder; }
 
 /* button */
 div.btn-banner {
@@ -153,10 +126,7 @@ div.btn-banner button:hover:before {
     height: 100%;
 }
 
-div.gen-obj {
-    padding-top: 2vw;
-}
-
+div.gen-obj { padding-top: 2vw; }
 div.gen-obj img {
     margin-right: 10px;
     width: 525px;
@@ -184,13 +154,8 @@ div.title {
     padding-top: 2vw;
 }
 
-div.title h3 {
-    font-size: 2.5em;
-}
-
-div.title p {
-    font-size: 1.2em;
-}
+div.title h3 { font-size: 2.5em; }
+div.title p { font-size: 1.2em; }
 
 div.title hr {
     font-family: "Red Hat Display";
@@ -211,15 +176,8 @@ span.square {
 }
 
 /* footer */
-footer {
-    background-color: #112849 !important;
-}
-
-a.questions-suggestions {
-    text-decoration: underline;
-}
+footer { background-color: #112849 !important; }
+a.questions-suggestions { text-decoration: underline; }
 
 /* modal */
-div.modal-header h5 {
-    font-size: 1.8em;
-}
+div.modal-header h5 { font-size: 1.8em; }
