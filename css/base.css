@@ -6,13 +6,17 @@
 }
 
 nav.covid-message {
-    background: gray;
     height: 5% !important;
+    background: gray;
+    position: relative;
+    z-index: 10;
     width: 30%;
 }
 
 nav.options-bar {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(17, 40, 73, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    position: relative;
+    z-index: 10;
     width: 70%;
 }
 
@@ -26,18 +30,44 @@ ul.submenu-options li { list-style-type: none; }
 div.navbar-brand { color: #ffffff; }
 
 /* header */
-div.jumbotron {
-    background-image: url("/img/120888772_1278861439151808_1272664044669923535_o.jpg");
-    background-size: cover;
+.carousel .carousel-item {
+    padding-bottom: 5% !important;
+    position: relative;
+    height: 600px !important;
+}
+  
+div.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    min-height: 600px !important;
+    top: 0;
+    left: 0;
 }
 
-h1.jumbo-text {
+a.carousel-control-btn {
+    background-color: #ffffff;
+    width: 5% !important;
+}
+
+span.carousel-icon { background-color: #112849; }
+
+div.headline {
+    position: absolute;
+    line-height: 0.6;
+    margin-top: 33%;
+    top: 10%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+
+h2.jumbo-text {
     font-family: "Bebas Neue";
+    text-transform: uppercase;
     color: #ffffff;
-    margin-top: 10vw;
-    padding-top: 24%;
-    font-size: 4rem;
-    height: 5em;
+    margin-top: 2%;
+    margin-bottom: 0;
 }
 
 p.lead span {
@@ -45,24 +75,23 @@ p.lead span {
     text-transform: uppercase;
     font-family: "Barlow";
     color: #112849;
-    font-size: 2em;
     font-style: bold;
+    font-size: 2em;
 }
 
-
 /* body */
-
 hr.separator {
     background-color: #112849;
+    margin-top: 3%;
     height: 0.2vw;
     width: 10vw;
 }
 
 div.message {
-    text-align: center;
     font-family: "Noto Sans TC";
-    font-size: 1.2em;
+    text-align: center;
     font-style: normal;
+    font-size: 1.2em;
 }
 
 div.message p { font-weight: lighter; }
@@ -78,16 +107,14 @@ div.btn-banner button {
     background: url(/img/btnBanner.png) no-repeat;
     transition: box-shadow 0.3s linear;
     background-size: cover;
-    margin: 0.5em;
-    width: 100%;
-    height: 226px;
+    margin-bottom: 0.5em;
     position: relative;
     padding: 1em 1.5em;
-    border: none;
-    background-color: transparent;
     cursor: pointer;
+    height: 226px;
     outline: none;
-    font-size: 18px;
+    border: none;
+    width: 100%;
 }
 
 div.btn-banner button::after,
@@ -125,6 +152,7 @@ div.btn-banner button:hover:before {
     width: 100%;
     height: 100%;
 }
+/* button */
 
 div.gen-obj { padding-top: 2vw; }
 div.gen-obj img {
@@ -158,15 +186,17 @@ div.title h3 { font-size: 2.5em; }
 div.title p { font-size: 1.2em; }
 
 div.title hr {
-    font-family: "Red Hat Display";
     height: 0.2vw;
     width: 30vw;
+    margin-bottom: 5%;
 }
 
-section.workfield {
-    padding-bottom: 10%;
-    padding-top: 5%;
-}
+section { margin-bottom: 5%; }
+
+a.list-group-item { background-color: #ffffff }
+a.list-group-item:hover { background-color: #112849; color: #ffffff; }
+a.list-group-item.active { background-color: #112849 !important; color: #ffffff; }
+
 
 span.square {
     background: #112849;

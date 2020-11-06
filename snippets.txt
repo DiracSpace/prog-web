@@ -20,7 +20,12 @@ https://github.com/DiracSpace/prog-web
                 </div>
             </div>
 
-
+<div class="container">
+                <h1 class="display-4 font-weight-light jumbo-text">Ingeniería en</h1>
+                <p class="font-weight-bold lead">
+                    <span>Sistemas Computacionales</span>
+                </p>
+            </div>
 .carousel .carousel-item {
     height: 500px;
     padding-bottom: 5% !important;
