@@ -1,6 +1,6 @@
 /* navbar */
 nav.options-bar {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(17, 40, 73, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background-image: linear-gradient(to right bottom, #005a87, #0c4d77, #114068, #123458, #112849);
 }
 
 ul.submenu-options { 
@@ -8,9 +8,11 @@ ul.submenu-options {
     display: flex;
 }
 
-a.nav-link { color: #ffffff; }
+.nav-link.active { background-color: #41AEE5 !important; }
 ul.submenu-options li { list-style-type: none; }
+ul.nav { background-color: #8799C9; }
 div.navbar-brand { color: #ffffff; }
+a.nav-link { color: #ffffff; }
 
 h3.hashtag {
     font-family: "Barlow Condensed";
@@ -25,33 +27,21 @@ h3.hashtag i {
     font-weight: bold;
 }
 
-ul.nav {
-    background-color: #8799C9;
-}
-
-.nav-link.active {
-    background-color: #41AEE5 !important;
-}
-
 /* body */
-section.main-content {
-    padding-top: 5%;
-}
+img.circular-images { border-radius: 50%; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-64 { font-size: 64px; }
+section.main-content { padding-top: 5%; }
+span.material-icons { color: black; }
 
 div.container p {
     font-family: "Pontano Sans";
     text-align: center;
     font-size: 1.5em;
     padding-top: 5%;
-}
-
-div.tri-col-images {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-img.circular-images {
-    border-radius: 50%;
 }
 
 div.grid:after {
@@ -61,25 +51,17 @@ div.grid:after {
 }
   
 div.grid-item {
-    width: 160px;
-    height: 150px;
-    margin-left: 1%;
+    border-color: hsla(0, 0%, 0%, 0.5);
+    border: 1px solid #333;
+    background: #00997B;
+    border-radius: 5px;
     margin-bottom: 1%;
     margin-right: 1%;
+    margin-left: 1%;
+    height: 150px;
+    width: 160px;
     float: left;
-    background: #00997B;
-    border: 1px solid #333;
-    border-color: hsla(0, 0%, 0%, 0.5);
-    border-radius: 5px;
 }
-
-span.material-icons { color: black; }
-
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-.material-icons.md-64 { font-size: 64px; }
 
 /* footer */
 footer { background-color: #112849 !important; }

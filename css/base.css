@@ -14,7 +14,7 @@ nav.covid-message {
 }
 
 nav.options-bar {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(17, 40, 73, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background-image: linear-gradient(to right bottom, #005a87, #0c4d77, #114068, #123458, #112849);
     position: relative;
     z-index: 10;
     width: 70%;
