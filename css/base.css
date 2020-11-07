@@ -6,8 +6,7 @@
 }
 
 nav.covid-message {
-    height: 5% !important;
-    background: gray;
+    background-image: linear-gradient(to right bottom, #787878, #787878, #787878, #787878, #787878);
     position: relative;
     z-index: 10;
     width: 30%;
@@ -154,6 +153,15 @@ div.btn-banner button:hover:before {
 }
 /* button */
 
+div.restrain {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+div.content {
+    margin-left: 45%;
+}
+
 div.gen-obj { padding-top: 2vw; }
 div.gen-obj img {
     margin-right: 10px;
@@ -166,6 +174,10 @@ div.gen-obj p {
     text-align: justify;
     font-family: "Pontano Sans";
     font-size: 1.2em;
+}
+
+div.gen-obj nav {
+    margin-left: 40%;
 }
 
 div.img-background {
@@ -182,7 +194,17 @@ div.img-background {
 
 div.overlay-text {
     margin-left: 60%;
-    margin-top: 13%;
+    margin-top: 2%;
+}
+
+div.overlay-pagination {
+    margin-left: 70%;
+    margin-top: 10%;
+}
+
+li.page-item {
+    background-color: #ffffff;
+    border-radius: 10%;
 }
 
 div.container li {
