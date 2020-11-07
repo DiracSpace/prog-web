@@ -168,12 +168,28 @@ div.gen-obj p {
     font-size: 1.2em;
 }
 
-div.img-text {
-    background-color: darkgray;
-    margin-top: 2vw;
+div.img-background {
+    background-image: url("/img/esmepw.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
     padding-top: 3vw;
+    margin-top: 2vw;
     height: 600px;
     width: 100%;
+}
+
+div.overlay-text {
+    margin-left: 60%;
+    margin-top: 13%;
+}
+
+div.container li {
+    font-family: "Pontano Sans";
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: lighter;
 }
 
 div.title {
@@ -207,7 +223,7 @@ span.square {
 
 /* footer */
 footer { background-color: #112849 !important; }
-a.questions-suggestions { text-decoration: underline; }
+footer.page-footer a { text-decoration: underline; }
 
 /* modal */
 div.modal-header h5 { font-size: 1.8em; }
