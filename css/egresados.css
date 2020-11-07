@@ -60,6 +60,7 @@ button.close span {
 div.modal-content {
     background-image: linear-gradient(to right bottom, #005a87, #0c4d77, #114068, #123458, #112849);
 }
+
 div.student-info-modal {
     font-family: "Red Hat Display";
     color: #ffffff;

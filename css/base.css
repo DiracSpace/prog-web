@@ -193,19 +193,10 @@ div.img-background {
 }
 
 div.overlay-text {
-    margin-left: 60%;
-    margin-top: 2%;
+    float: right;
 }
 
-div.overlay-pagination {
-    margin-left: 70%;
-    margin-top: 10%;
-}
-
-li.page-item {
-    background-color: #ffffff;
-    border-radius: 10%;
-}
+li.page-item { background-color: #ffffff;}
 
 div.container li {
     font-family: "Pontano Sans";
@@ -235,13 +226,39 @@ a.list-group-item { background-color: #ffffff }
 a.list-group-item:hover { background-color: #112849; color: #ffffff; }
 a.list-group-item.active { background-color: #112849 !important; color: #ffffff; }
 
-
-span.square {
-    background: #112849;
-    float: right;
-    width: 100px;
-    height: 100px;
+div.close-btn { margin-top: 1%; }
+div.close-btn button {
+    background-color: #ffffff;
+    border-radius: 20%;
+    height: 2em;
+    width: 2em;
 }
+
+button.close span {
+    width: 2em;
+    height: 2em;
+}
+
+div.modal-body {
+    position: relative;
+    z-index: 3;
+}
+
+div.image {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+}
+
+div.image img {
+    color: gray;
+    height: 400px;
+    width: 400px;
+}
+
+div.modal-body h3, p { text-align: center; }
+div.modal-body p { margin-bottom: 5%; }
 
 /* footer */
 footer { background-color: #112849 !important; }

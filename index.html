@@ -163,7 +163,7 @@
         <!-- end -->
         <!-- img-text -->
         <div class="img-background">
-            <div class="container overlay-pagination">
+            <div class="container overlay-text">
                 <nav aria-label="something">
                     <ul class="pagination pagination-lg">
                         <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -171,8 +171,6 @@
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                     </ul>
                 </nav>
-            </div>
-            <div class="overlay-text">
                 <div class="container">
                     <ul>
                         <li>
@@ -306,20 +304,20 @@
     <!-- modal -->
     <div class="modal fade" id="questions" tabindex="-1" role="dialog" aria-labelledby="QuestionsModal"
         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="QuestionsModal">Más información</h5>
+                <div class="container-fluid close-btn">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
+                    <h3>Más información</h3>
                     <p>
                         Envía tus dudas utilizando el formulario que se encuentra a continuación y se te respondera a la
                         brevedad. También puedes contactarnos vía teléfonica o por correo eletrónico.
                     </p>
-                    <div class="row">
+                    <div class="row front">
                         <div class="col">
                             <form class="needs-validation" novalidate>
                                 <div class="form-group">
@@ -350,10 +348,13 @@
                         </div>
                         <div class="col">
                             <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <label for="exampleFormControlTextarea1">Descripción</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
                             </div>
                         </div>
+                    </div>
+                    <div class="image">
+                        <img class="img-fluid" src="img/burritoGris.png" />
                     </div>
                 </div>
                 <div class="modal-footer">
