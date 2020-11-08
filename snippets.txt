@@ -4,6 +4,12 @@ https://www.figma.com/file/4oyli5myCVNrmD7oQqtlyp/perfil-y-reticula-ISC?node-id=
 repo
 https://github.com/DiracSpace/prog-web
 
+Drive
+https://drive.google.com/drive/folders/1mhwjLI8J1YV6trlzDYmCS4nQtPVel2Eh?usp=sharing
+
+help links
+https://stackoverflow.com/questions/44257853/create-pagination-on-div-using-jquery
+
 <div class="navbar-brand">
                 <img src="img/Tecnologico_de_el_Mante_logo.png" width="85" height="50" alt="">
             </div>
@@ -19,6 +25,15 @@ https://github.com/DiracSpace/prog-web
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </div>
             </div>
+
+<p>
+                            Formar profesionistas en Ingeniería en Sistemas Computacionales capaces de identificar y
+                            delimitar problemas relacionados con el procesamiento de información, la innovación y el
+                            desarrollo tecnológico, estructurar e implementar sistemas y soluciones,
+                            con habilidades de autoaprendizaje y trabajo en equipo, apoyados en herramientas, estándares
+                            y
+                            métodos científicos, conscientes del impacto de su ejercicio profesional en la sociedad.
+                        </p>
 
 <div class="container">
                 <h1 class="display-4 font-weight-light jumbo-text">Ingeniería en</h1>

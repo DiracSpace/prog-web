@@ -1,4 +1,11 @@
+/* general */
+section { margin-bottom: 5%; }
+
 /* navbar */
+ul.submenu-options li { list-style-type: none; }
+div.navbar-brand { color: #ffffff; }
+a.nav-link { color: #ffffff; }
+
 .navbar { 
     margin-bottom: 0% !important;
     font-weight: 200 !important;
@@ -16,7 +23,7 @@ nav.options-bar {
     background-image: linear-gradient(to right bottom, #005a87, #0c4d77, #114068, #123458, #112849);
     position: relative;
     z-index: 10;
-    width: 70%;
+    width: 100%;
 }
 
 ul.submenu-options { 
@@ -24,23 +31,20 @@ ul.submenu-options {
     display: flex; 
 }
 
-a.nav-link { color: #ffffff; }
-ul.submenu-options li { list-style-type: none; }
-div.navbar-brand { color: #ffffff; }
-
 /* header */
+span.carousel-icon { background-color: #112849; }
 .carousel .carousel-item {
     padding-bottom: 5% !important;
-    position: relative;
     height: 600px !important;
+    position: relative;
 }
   
 div.carousel-item img {
+    min-height: 600px !important;
     position: absolute;
     object-fit: cover;
-    min-height: 600px !important;
-    top: 0;
     left: 0;
+    top: 0;
 }
 
 a.carousel-control-btn {
@@ -48,25 +52,24 @@ a.carousel-control-btn {
     width: 5% !important;
 }
 
-span.carousel-icon { background-color: #112849; }
-
+/* carousel overlay text */
 div.headline {
+    pointer-events: none;
     position: absolute;
     line-height: 0.6;
     margin-top: 33%;
+    z-index: 10;
+    right: 0;
     top: 10%;
     left: 0;
-    right: 0;
-    z-index: 10;
-    pointer-events: none;
 }
 
 h2.jumbo-text {
     font-family: "Bebas Neue";
     text-transform: uppercase;
     color: #ffffff;
-    margin-top: 2%;
     margin-bottom: 0;
+    margin-top: 2%;
 }
 
 p.lead span {
@@ -79,29 +82,25 @@ p.lead span {
 }
 
 /* body */
+div.message span { font-weight: bolder; }
+div.message p { font-weight: lighter; }
+
 hr.separator {
     background-color: #112849;
     margin-top: 3%;
     height: 0.2vw;
-    width: 10vw;
+    width: 15vw;
 }
 
 div.message {
     font-family: "Noto Sans TC";
     text-align: center;
     font-style: normal;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
-
-div.message p { font-weight: lighter; }
-div.message span { font-weight: bolder; }
 
 /* button */
-div.btn-banner {
-    text-align: center;
-    padding-top: 5vw;
-}
-
+div.btn-banner { padding-top: 5vw; }
 div.btn-banner button {
     background: url(/img/btnBanner.png) no-repeat;
     transition: box-shadow 0.3s linear;
@@ -151,33 +150,27 @@ div.btn-banner button:hover:before {
     width: 100%;
     height: 100%;
 }
-/* button */
+
+/* career information */
+li.page-item { background-color: #ffffff;}
 
 div.restrain {
-    padding-left: 4%;
+    margin-top: 5%;
     padding-right: 4%;
+    padding-left: 4%;
 }
 
-div.content {
-    margin-left: 45%;
-}
-
-div.gen-obj { padding-top: 2vw; }
-div.gen-obj img {
-    margin-right: 10px;
-    width: 525px;
-    height: 235px;
-    float: left;
-}
-
-div.gen-obj p {
+p.col-text {
+    font-family: "Barlow";
     text-align: justify;
-    font-family: "Pontano Sans";
     font-size: 1.2em;
+    padding-top: 20%;
 }
 
-div.gen-obj nav {
-    margin-left: 40%;
+div.selection .nav-link.active { background-color: #41AEE5; }
+div.selection li {
+    font-family: "Pontano Sans";
+    background-color: #112849;
 }
 
 div.img-background {
@@ -187,23 +180,21 @@ div.img-background {
     background-size: 100%;
     position: relative;
     padding-top: 3vw;
-    margin-top: 2vw;
+    margin-top: 5%;
     height: 600px;
     width: 100%;
 }
 
-div.overlay-text {
-    float: right;
-}
-
-li.page-item { background-color: #ffffff;}
-
 div.container li {
     font-family: "Pontano Sans";
+    font-weight: lighter;
     color: #ffffff;
     font-size: 1.2em;
-    font-weight: lighter;
 }
+
+/* campo laboral*/
+div.title h3 { font-size: 2.5em; }
+div.title p { font-size: 1.2em; }
 
 div.title {
     padding-bottom: 3vw;
@@ -211,22 +202,38 @@ div.title {
     padding-top: 2vw;
 }
 
-div.title h3 { font-size: 2.5em; }
-div.title p { font-size: 1.2em; }
-
 div.title hr {
+    margin-bottom: 5%;
     height: 0.2vw;
     width: 30vw;
-    margin-bottom: 5%;
 }
 
-section { margin-bottom: 5%; }
-
-a.list-group-item { background-color: #ffffff }
-a.list-group-item:hover { background-color: #112849; color: #ffffff; }
+/* faq */
 a.list-group-item.active { background-color: #112849 !important; color: #ffffff; }
+a.list-group-item:hover { background-color: #112849; color: #ffffff; }
+a.list-group-item { background-color: #ffffff }
 
+p.job-text {
+    font-family: "Pontano Sans";
+    text-align: justify;
+}
+
+ul.faq-list li {
+    color: #030303;
+    text-align: left;
+}
+
+/* footer */
+footer.page-footer a { text-decoration: underline; }
+footer { background-color: #112849 !important; }
+
+/* modal */
+div.modal-body .modal-text-center { text-align: center; }
+div.modal-header h5 { font-size: 1.8em; }
+div.modal-body p { margin-bottom: 5%; }
 div.close-btn { margin-top: 1%; }
+.info-underline { text-decoration: underline; }
+
 div.close-btn button {
     background-color: #ffffff;
     border-radius: 20%;
@@ -252,17 +259,6 @@ div.image {
 }
 
 div.image img {
-    color: gray;
     height: 400px;
     width: 400px;
 }
-
-div.modal-body h3, p { text-align: center; }
-div.modal-body p { margin-bottom: 5%; }
-
-/* footer */
-footer { background-color: #112849 !important; }
-footer.page-footer a { text-decoration: underline; }
-
-/* modal */
-div.modal-header h5 { font-size: 1.8em; }

@@ -29,18 +29,6 @@
 <body>
     <!-- start of page -->
     <header>
-        <!-- covid-19 message -->
-        <nav class="navbar navbar-default covid-message" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <div class="navbar-brand">
-                        <img src="img/heart.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                        <span>Cuídate contra el covid-19</span>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!-- end -->
         <!-- navbar options -->
         <nav class="navbar navbar-default options-bar" role="navigation">
             <div class="container-fluid">
@@ -135,27 +123,86 @@
         <!-- end -->
     </section>
     <section class="vision-perfgraduates">
+        <div class="container selection">
+            <ul class="nav nav-pills nav-fill" id="info-career" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="mission-tab" data-toggle="tab" data href="#mission" role="tab"
+                        aria-controls="mision" aria-selected="true">Misión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="vision'tab" data-toggle="tab" data href="#vision" role="tab"
+                        aria-controls="vision" aria-selected="false">Visión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="gen-objective-tab" data-toggle="tab" data href="#gen-objective" role="tab"
+                        aria-controls="objetivo general" aria-selected="false">Objetivo General</a>
+                </li>
+            </ul>
+        </div>
         <!-- image and text -->
-        <div class="container-fluid restrain">
-            <div class="row">
-                <div class="col-md-12 gen-obj">
-                    <img class="img-fluid" src="img/88106556_1077763242594963_6922714303002836992_o.jpg" />
-                    <div class="content">
-                        <nav aria-label="something">
-                            <ul class="pagination pagination-lg">
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            </ul>
-                        </nav>
-                        <p>
-                            Formar profesionistas en Ingeniería en Sistemas Computacionales capaces de identificar y
-                            delimitar problemas relacionados con el procesamiento de información, la innovación y el
-                            desarrollo tecnológico, estructurar e implementar sistemas y soluciones,
-                            con habilidades de autoaprendizaje y trabajo en equipo, apoyados en herramientas, estándares
-                            y
-                            métodos científicos, conscientes del impacto de su ejercicio profesional en la sociedad.
-                        </p>
+        <div class="restrain">
+            <div class="content">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <img class="img-fluid img-thumbnail" src="img/mision.jpg" />
+                                </div>
+                                <div class="col">
+                                    <p class="col-text">
+                                        Formar profesionistas en Ingeniería en Sistemas Computacionales capaces de
+                                        identificar y
+                                        delimitar problemas relacionados con el procesamiento de información, la
+                                        innovación
+                                        y el
+                                        desarrollo tecnológico, estructurar e implementar sistemas y soluciones,
+                                        con habilidades de autoaprendizaje y trabajo en equipo, apoyados en
+                                        herramientas,
+                                        estándares
+                                        y
+                                        métodos científicos, conscientes del impacto de su ejercicio profesional en la
+                                        sociedad.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <img class="img-fluid img-thumbnail" src="img/vision.jpg" />
+                                </div>
+                                <div class="col">
+                                    <p class="col-text">
+                                        Ser un programa educativo dinámico, que responda a los requerimientos locales,
+                                        nacionales y globales, que tome en consideración los avances y tendencias de
+                                        desarrollo tecnológico, que posibilite la formación académica y personal de
+                                        profesionistas capaces y comprometidos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="gen-objective" role="tabpanel" aria-labelledby="gen-objective-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <img class="img-fluid img-thumbnail" src="img/objetivo general.jpg" />
+                                </div>
+                                <div class="col">
+                                    <p class="col-text">
+                                        Formar profesionistas líderes, analíticos, críticos y creativos, con visión
+                                        estratégica y amplio sentido ético, capaces de diseñar, implementar y
+                                        administrar
+                                        infraestructura computacional para aportar soluciones innovadoras en beneficio
+                                        de la
+                                        sociedad, en un contexto global, multidisciplinario y sustentable.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -166,9 +213,8 @@
             <div class="container overlay-text">
                 <nav aria-label="something">
                     <ul class="pagination pagination-lg">
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Perfil de Ingreso</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Perfil de Egreso</a></li>
                     </ul>
                 </nav>
                 <div class="container">
@@ -230,27 +276,163 @@
             <div class="row">
                 <div class="col-4">
                     <div class="list-group" id="list-tab" role="tablist">
-                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
-                            href="#list-home" role="tab" aria-controls="home">¿Cómo puedo contactarlos?</a>
-                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
-                            href="#list-profile" role="tab" aria-controls="profile">¿Qué documentos ocupo para
-                            inscripción?</a>
-                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
-                            href="#list-messages" role="tab" aria-controls="messages">¿Dónde se encuentran ubicados?</a>
-                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-                            href="#list-settings" role="tab" aria-controls="settings">¿Cómo puedo llegar?</a>
+                        <a class="list-group-item list-group-item-action active" id="list-serviciosocial-list"
+                            data-toggle="list" href="#list-servicio-social" role="tab"
+                            aria-controls="servicio-social">Trámite del Servicio Social</a>
+                        <a class="list-group-item list-group-item-action" id="list-preinscripcion-list"
+                            data-toggle="list" href="#list-preinscripcion" role="tab"
+                            aria-controls="profile">Preinscripción</a>
+                        <a class="list-group-item list-group-item-action" id="list-residencias-list" data-toggle="list"
+                            href="#list-residencias" role="tab" aria-controls="residencias">Residencias
+                            Profesionales</a>
+                        <a class="list-group-item list-group-item-action" id="list-titulacion-list" data-toggle="list"
+                            href="#list-titulacion" role="tab" aria-controls="titulacion">Titulación</a>
+                        <a class="list-group-item list-group-item-action" id="list-trabajo-list" data-toggle="list"
+                            href="#list-trabajo" role="tab" aria-controls="trabajo">Campo de Trabajo</a>
+                        <a class="list-group-item list-group-item-action" id="list-concursos-list" data-toggle="list"
+                            href="#list-concursos" role="tab" aria-controls="concursos">Concursos</a>
+                        <a class="list-group-item list-group-item-action" id="list-viajes-list" data-toggle="list"
+                            href="#list-viajes" role="tab" aria-controls="viajes">Viajes</a>
+                        <a class="list-group-item list-group-item-action" id="list-requisitos-list" data-toggle="list"
+                            href="#list-requisitos" role="tab" aria-controls="requisitos">Requisitos previos</a>
+                        <a class="list-group-item list-group-item-action" id="list-ubicacion-list" data-toggle="list"
+                            href="#list-ubicacion" role="tab" aria-controls="ubicacion">Ubicación</a>
                     </div>
                 </div>
                 <div class="col-8">
                     <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="list-home" role="tabpanel"
-                            aria-labelledby="list-home-list">Información</div>
-                        <div class="tab-pane fade" id="list-profile" role="tabpanel"
-                            aria-labelledby="list-profile-list">Información</div>
-                        <div class="tab-pane fade" id="list-messages" role="tabpanel"
-                            aria-labelledby="list-messages-list">Información</div>
-                        <div class="tab-pane fade" id="list-settings" role="tabpanel"
-                            aria-labelledby="list-settings-list">Información</div>
+                        <div class="tab-pane fade show active" id="list-servicio-social" role="tabpanel"
+                            aria-labelledby="list-home-list">
+                            <h4>Servicio Social</h4>
+                            <hr />
+                            <ul class="faq-list">
+                                <li>Curso de ofimática terminado (constancia)</li>
+                                <li>Actividades extra escolares finalizadas (constancia)</li>
+                                <li>Informe Final de Actividad del Servicio Social</li>
+                                <li>Plan de Trabajo para Prestadores del Servicio Social</li>
+                                <li>Solicitud de Servicio Social</li>
+                            </ul>
+                            <p class="ss-contact">
+                                Contacto para más información: <a class="info-underline"
+                                    href="mailto:ewon@itsmante.edu.mx" target="_blank">Luis Wong</a>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="list-preinscripcion" role="tabpanel"
+                            aria-labelledby="list-profile-list">
+                            <h4>Preinscripción</h4>
+                            <hr />
+                            <ul class="faq-list">
+                                <li>Llenar la solicitud de examen de admisión</li>
+                                <li>Pagar el examen de admisión <span class="info-underline">$700</span> (incluye examen
+                                    CENEVAL y curso propedéutico)</li>
+                                <li>Copia del certificado de Bachillerato ó constancia de Terminación de Estudios ó
+                                    Historial Académico a la fecha</li>
+                                <li>Copia del Acta de Nacimiento</li>
+                                <li>2 fotografías tamaño infantil (blanco y negro)</li>
+                                <li>Copia del Comprobante de Domicilio</li>
+                                <li>Copia de la CURP</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="list-residencias" role="tabpanel"
+                            aria-labelledby="list-messages-list">
+                            <h4>Documentación para Residencias Profesionales</h4>
+                            <hr />
+                            <ul class="faq-list">
+                                <li>Proceso de Residencia Profesional</li>
+                                <li>Anexo &#8553;&#8553;&#8550;. Reporte preliminar de Residencia Profesional</li>
+                            </ul>
+                            <p>Listado de Competencias</p>
+                            <ul class="faq-list">
+                                <li>Anexo &#8553;&#8553;&#8551;. Estructura del reporte final de Residencia Profesional
+                                </li>
+                                <li>Anexo &#8553;&#8553;&#8552;. Formato de Evaluación y seguimiento de reporte de
+                                    Residencia Profesional</li>
+                                <li>Anexo &#8553;&#8553;&#8553;. Formato de Evaluación de reporte de Residencia
+                                    Profesional</li>
+                                <li>Memoria de Veranos</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="list-titulacion" role="tabpanel"
+                            aria-labelledby="list-titulacion-list">
+                            <h4>Documentación para Titulación</h4>
+                            <hr />
+                            <ul class="faq-list">
+                                <li>Carta de No Adeudos</li>
+                                <li>Manual de Titulación</li>
+                                <li>Solicitud de Registro de Título y Expedición de Cédula Profesional</li>
+                                <li>Solicitud de Titulación</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="list-trabajo" role="tabpanel"
+                            aria-labelledby="list-trabajo-list">
+                            <h4>Campo de Trabajo</h4>
+                            <hr />
+                            <p class="job-text">
+                                Los Ingenieros en Sistemas Computacionales pueden desempeñarse en cualquier organización
+                                pública
+                                o privada donde se desee tener control de procesos por medio de sistemas
+                                computacionales.
+                                Puedes ver el campo de trabajo de un ingeniero en sistemas en <a class="info-underline"
+                                    href="https://www.occ.com.mx" target="_blank">occmundial</a>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="list-concursos" role="tabpanel"
+                            aria-labelledby="list-concursos-list">
+                            <h4>Concursos</h4>
+                            <hr />
+                            <p class="job-text">
+                                La carrera de ingenieria en sistemas computacionales se distingue por la participación
+                                de sus alumnos
+                                en múltiples concursos,algunos de estos concursos son:
+                            </p>
+                            <ul class="faq-list">
+                                <li>ICPC</li>
+                                <li>COTACYT</li>
+                                <li>TamCoder</li>
+                                <li>Certamen Estatal Creatividad e Innovaci[on Tecnológica</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="list-viajes" role="tabpanel" aria-labelledby="list-viajes-list">
+                            <h4>¡Realizamos viajes!</h4>
+                            <hr />
+                            <p class="job-text">
+                                Los alumnos de la carrera realizan viajes a distintas partes del país, principalmente a
+                                aquellas ciudades
+                                en donde la demanda de trabajo es mas alta. Hacemos esto para conocer distintas empresas
+                                y ver
+                                su entorno
+                                laborar, los requisitos necesarios, las oportunidades para ejercer y crecer
+                                profesionalmente. Estos
+                                viajes son para alumnos a partir de <span class="info-underline">4to semestre</span>.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="list-requisitos" role="tabpanel"
+                            aria-labelledby="list-requisitos-list">
+                            <h4>¿Requisitos previos?</h4>
+                            <hr />
+                            <p class="job-text">
+                                No, En tu primer semestre cursarás las materias de fundamentos de programación para
+                                desarrollar
+                                más tu lógica y siempre tendrás a tus docentes y compañeros de otros semestres que te
+                                apoyarán
+                                para cualquier duda en tus materias.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="list-ubicacion" role="tabpanel"
+                            aria-labelledby="list-ubicacion-list">
+                            <h4>¿Cómo llegar?</h4>
+                            <hr />
+                            <p class="job-text">
+                                El Instituto Tecnológico Superior de El Mante cuenta con transporte escolar para
+                                facilitar a sus alumnos el trasladado a
+                                la institución en
+                                distintos horarios de entrada y salida, puedes consultarlos <a href="#"
+                                    id="routes-redirect">aquí</a>. La ubicación de la escuela puedes verificarla
+                                con Google Maps haciendo click en la dirección: <a href="#" id="maps-redirect">K.m 6.7,
+                                    México
+                                    85, 89930 Quintero, Tamps.</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -312,8 +494,8 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h3>Más información</h3>
-                    <p>
+                    <h3 class="modal-text-center">Más información</h3>
+                    <p class="modal-text-center">
                         Envía tus dudas utilizando el formulario que se encuentra a continuación y se te respondera a la
                         brevedad. También puedes contactarnos vía teléfonica o por correo eletrónico.
                     </p>
