@@ -127,7 +127,8 @@
         <!-- end -->
         <!-- button banner -->
         <div class="container btn-banner">
-            <button type="button" class="btn btn-secondary btn-lg btn-block shadow p-3 mb-5 bg-white rounded"></button>
+            <button id="infographic-btn" type="button"
+                class="btn btn-secondary btn-lg btn-block shadow p-3 mb-5 bg-white rounded"></button>
         </div>
         <!-- end -->
     </section>
@@ -218,35 +219,96 @@
         </div>
         <!-- end -->
         <!-- img-text -->
-        <div class="img-background">
-            <div class="container'fluid overlay-text">
-                <nav aria-label="something">
-                    <ul class="pagination pagination-lg">
-                        <li class="page-item"><a class="page-link" href="#">Perfil de Ingreso</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Perfil de Egreso</a></li>
-                    </ul>
-                </nav>
-                <div class="container">
-                    <ul>
-                        <li>
-                            Facilidad matemática para comprender conceptos y proponer soluciones a problemas
-                            relacionados
-                            con aspectos aritméticos, algebraicos y geométricos.
-                        </li>
-                        <li>
-                            Deseos de interés por la competitividad, por buscar la excelencia en su formación escolar.
-                        </li>
-                        <li>
-                            Habilidad verbal para comprender, analizar, interpretar, abstraer y manejar conceptos
-                            expresados mediante lenguaje.
-                        </li>
-                        <li>
-                            Capacidad para estudiar períodos largos y continuos.
-                        </li>
-                        <li>
-                            Habilidad y responsabilidad para trabajar en equipo.
-                        </li>
-                    </ul>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="perfil-ingreso-tab" data-toggle="tab" href="#ingreso" role="tab"
+                            aria-controls="ingreso" aria-selected="true">Perfil de Ingreso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="perfil-egreso-tab" data-toggle="tab" href="#egreso" role="tab"
+                            aria-controls="egreso" aria-selected="false">Perfil de Egreso</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="ingreso" role="tabpanel" aria-labelledby="ingreso-tab">
+                        <ul class="profile-text">
+                            <li>
+                                <p>
+                                    Facilidad matemática para comprender conceptos y proponer soluciones a problemas
+                                    relacionados con aspectos aritméticos, algebraicos y geométricos.
+                                </p>
+                            </li>
+                            <li>
+                                Habilidad verbal para comprender, analizar, interpretar, abstraer y manejar conceptos
+                                expresados mediante lenguaje.
+                            </li>
+                            <li>
+                                Capacidad para estudiar períodos largos y continuos.
+                            </li>
+                            <li>
+                                Habilidad y responsabilidad para trabajar en equipo.
+                            </li>
+                            <li>
+                                Deseos de interés por la competitividad, por buscar la excelencia en su formación
+                                escolar.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="egreso" role="tabpanel" aria-labelledby="egreso-tab">
+                        <ul class="profile-text">
+                            <li>
+                                <p>
+                                    Diseñar, configurar y administrar redes computacionales aplicando las normas y
+                                    estándares vigentes.
+                                </p>
+                            </li>
+                            <li>
+                                Desarrollar, implementar y administrar software de sistemas o de aplicación que cumpla
+                                con los estándares de calidad con el fin de apoyar la productividad y competitividad de
+                                las organizaciones.
+                            </li>
+                            <li>
+                                Coordinar y participar en proyectos interdisciplinarios.
+                            </li>
+                            <li>
+                                Diseñar e implementar interfaces hombre‐máquina y máquina‐máquina para la automatización
+                                de sistemas.
+                            </li>
+                            <li>
+                                Identificar y comprender las tecnologías de hardware para proponer, desarrollar y
+                                mantener aplicaciones eficientes.
+                            </li>
+                            <li>
+                                Diseñar, desarrollar y administrar bases de datos conforme a requerimientos definidos,
+                                normas organizacionales de manejo y seguridad de la información, utilizando tecnologías
+                                emergentes.
+                            </li>
+                            <li>
+                                Integrar soluciones computacionales con diferentes tecnologías, plataformas o
+                                dispositivos.
+                            </li>
+                            <li>
+                                Desarrollar una visión empresarial para detectar áreas de oportunidad que le permitan
+                                emprender y desarrollar proyectos aplicando las tecnologías de la información y
+                                comunicación.
+                            </li>
+                            <li>
+                                Desempeñar sus actividades profesionales considerando los aspectos legales, éticos,
+                                sociales y de desarrollo sustentable.
+                            </li>
+                            <li>
+                                Poseer habilidades metodológicas de investigación que fortalezcan el desarrollo
+                                cultural, científico y tecnológico en el ámbito de sistemas computacionales y
+                                disciplinas afines.
+                            </li>
+                            <li>
+                                Seleccionar y aplicar herramientas matemáticas para el modelado, diseño y desarrollo de
+                                tecnología computacional.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -283,7 +345,7 @@
             <h3>Preguntas frecuentes (FAQ's)</h3>
             <hr />
             <div class="row">
-                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-sm-none d-md-block">
                     <div class="list-group" id="list-tab" role="tablist">
                         <a class="list-group-item list-group-item-action active" id="list-serviciosocial-list"
                             data-toggle="list" href="#list-servicio-social" role="tab"
@@ -307,6 +369,48 @@
                         <a class="list-group-item list-group-item-action" id="list-ubicacion-list" data-toggle="list"
                             href="#list-ubicacion" role="tab" aria-controls="ubicacion">Ubicación</a>
                     </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-none d-sm-block d-md-none">
+                    <ul class="nav nav-pills nav-fill">
+                        <li class="nav-item">
+                            <a class="nav-link active sm-ph-tab" id="list-serviciosocial-list" data-toggle="list"
+                                href="#list-servicio-social" role="tab" aria-controls="servicio-social">Trámite del
+                                Servicio Social</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sm-ph-tab" id="list-preinscripcion-list" data-toggle="list"
+                                href="#list-preinscripcion" role="tab" aria-controls="profile">Preinscripción</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sm-ph-tab" id="list-residencias-list" data-toggle="list"
+                                href="#list-residencias" role="tab" aria-controls="residencias">Residencias
+                                Profesionales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sm-ph-tab" id="list-titulacion-list" data-toggle="list"
+                                href="#list-titulacion" role="tab" aria-controls="titulacion">Titulación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sm-ph-tab" id="list-trabajo-list" data-toggle="list" href="#list-trabajo"
+                                role="tab" aria-controls="trabajo">Campo de Trabajo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sm-ph-tab" id="list-concursos-list" data-toggle="list"
+                                href="#list-concursos" role="tab" aria-controls="concursos">Concursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sm-ph-tab" id="list-viajes-list" data-toggle="list" href="#list-viajes"
+                                role="tab" aria-controls="viajes">Viajes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sm-ph-tab" id="list-requisitos-list" data-toggle="list"
+                                href="#list-requisitos" role="tab" aria-controls="requisitos">Requisitos previos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sm-ph-tab" id="list-ubicacion-list" data-toggle="list"
+                                href="#list-ubicacion" role="tab" aria-controls="ubicacion">Ubicación</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 question-info">
                     <div class="tab-content" id="nav-tabContent">

@@ -1,6 +1,3 @@
-/* general */
-section { margin-bottom: 5%; }
-
 @media (max-width: 400px) {
     div.headline {
         top: 80% !important;
@@ -79,6 +76,7 @@ nav.options-bar {
 
 ul.submenu-options { 
     margin-bottom: 0% !important;
+    float: right;
     display: flex; 
 }
 
@@ -203,6 +201,10 @@ div.btn-banner button:hover:before {
 
 /* career information */
 li.page-item { background-color: #ffffff;}
+ul.profile-text li {
+    font-family: "Pontano Sans";
+    font-size: 1em;
+}
 
 div.restrain {
     margin-top: 5%;
@@ -222,16 +224,15 @@ div.selection li {
     background-color: #112849;
 }
 
-div.img-background {
+div.jumbotron {
     background-image: url("/img/esmepw.png");
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: none !important;
     background-size: 100%;
-    position: relative;
-    padding-top: 3vw;
     margin-top: 5%;
-    height: 600px;
-    width: 100%;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
 }
 
 div.container li {
@@ -261,6 +262,10 @@ div.title hr {
 a.list-group-item.active { background-color: #112849 !important; color: #ffffff; }
 a.list-group-item:hover { background-color: #112849; color: #ffffff; }
 a.list-group-item { background-color: #ffffff }
+
+a.sm-ph-tab.nav-link.active { background-color: #112849 !important; color: #ffffff; }
+li.nav-item a.sm-ph-tab { color: #030303; }
+li.nav-item a.sm-ph-tab:hover { background-color: #112849; color: #ffffff; }
 
 p.job-text {
     font-family: "Pontano Sans";
