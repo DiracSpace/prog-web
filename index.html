@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pontano+Sans" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Display" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/4be3e68216.js" crossorigin="anonymous"></script>
     <!-- Material Design Bootstrap -->
@@ -30,28 +31,36 @@
     <!-- start of page -->
     <header>
         <!-- navbar options -->
-        <nav class="navbar navbar-default options-bar" role="navigation">
+        <nav class="navbar navbar-expand-lg navbar-default options-bar" role="navigation">
             <div class="container-fluid">
-                <div class="navbar-header">
-
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-options"
+                    aria-controls="mobile-options" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="material-icons menu">menu</span>
+                </button>
+                <div class="collapse navbar-collapse" id="mobile-options">
+                    <div class="navbar-header">
+                        <a class="navbar-brand">
+                            <img src="/img/Tecnologico_de_el_Mante_logo.png" width="80" height="50" alt="">
+                        </a>
+                    </div>
+                    <ul class="submenu-options">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/sites/egresados.html">Egresados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/sites/eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/sites/concursos.html">Concursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Plan de Estudios</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="submenu-options">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/sites/egresados.html">Egresados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/sites/eventos.html">Eventos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/sites/concursos.html">Concursos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Plan de Estudios</a>
-                    </li>
-                </ul>
             </div>
         </nav>
         <!-- end -->
@@ -146,10 +155,10 @@
                     <div class="tab-pane active" id="mission" role="tabpanel" aria-labelledby="mission-tab">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col">
+                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
                                     <img class="img-fluid img-thumbnail" src="img/mision.jpg" />
                                 </div>
-                                <div class="col">
+                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 p-text">
                                     <p class="col-text">
                                         Formar profesionistas en Ingeniería en Sistemas Computacionales capaces de
                                         identificar y
@@ -171,10 +180,10 @@
                     <div class="tab-pane" id="vision" role="tabpanel" aria-labelledby="vision-tab">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col">
+                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
                                     <img class="img-fluid img-thumbnail" src="img/vision.jpg" />
                                 </div>
-                                <div class="col">
+                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 p-text">
                                     <p class="col-text">
                                         Ser un programa educativo dinámico, que responda a los requerimientos locales,
                                         nacionales y globales, que tome en consideración los avances y tendencias de
@@ -188,10 +197,10 @@
                     <div class="tab-pane" id="gen-objective" role="tabpanel" aria-labelledby="gen-objective-tab">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col">
+                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
                                     <img class="img-fluid img-thumbnail" src="img/objetivo general.jpg" />
                                 </div>
-                                <div class="col">
+                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 p-text">
                                     <p class="col-text">
                                         Formar profesionistas líderes, analíticos, críticos y creativos, con visión
                                         estratégica y amplio sentido ético, capaces de diseñar, implementar y
@@ -210,7 +219,7 @@
         <!-- end -->
         <!-- img-text -->
         <div class="img-background">
-            <div class="container overlay-text">
+            <div class="container'fluid overlay-text">
                 <nav aria-label="something">
                     <ul class="pagination pagination-lg">
                         <li class="page-item"><a class="page-link" href="#">Perfil de Ingreso</a></li>
@@ -253,18 +262,18 @@
             </p>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12 img-columns">
-                    <img class="img-thumbnail" src="img/accenture-logo-edited.png" />
+            <div class="row four-column-img">
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 img-columns">
+                    <img class="img-fluid img-thumbnail" src="img/accenture-logo-edited.png" />
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 img-columns">
-                    <img class="img-thumbnail" src="img/ibm-logo-edited.png" />
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 img-columns">
+                    <img class="img-fluid img-thumbnail" src="img/ibm-logo-edited.png" />
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <img class="img-thumbnail" src="img/unnamed-removebg-preview.png" />
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 img-columns">
+                    <img class="img-fluid img-thumbnail" src="img/unnamed-removebg-preview.png" />
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <img class="img-thumbnail" src="img/NEORIS.Logo-Black.png" />
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 img-columns">
+                    <img class="img-fluid img-thumbnail" src="img/NEORIS.Logo-Black.png" />
                 </div>
             </div>
         </div>
@@ -274,7 +283,7 @@
             <h3>Preguntas frecuentes (FAQ's)</h3>
             <hr />
             <div class="row">
-                <div class="col-4">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                     <div class="list-group" id="list-tab" role="tablist">
                         <a class="list-group-item list-group-item-action active" id="list-serviciosocial-list"
                             data-toggle="list" href="#list-servicio-social" role="tab"
@@ -299,7 +308,7 @@
                             href="#list-ubicacion" role="tab" aria-controls="ubicacion">Ubicación</a>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 question-info">
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="list-servicio-social" role="tabpanel"
                             aria-labelledby="list-home-list">

@@ -1,23 +1,74 @@
 /* general */
 section { margin-bottom: 5%; }
 
+@media (max-width: 400px) {
+    div.headline {
+        top: 80% !important;
+        line-height: normal !important;
+    }
+
+    div.headline h2.jumbo-text {
+        font-size: 1.5em !important;
+    }
+
+    p.lead span {
+        font-size: 1.5em !important;
+    }
+}
+
+@media (max-width: 500px) {
+    div.img-columns img {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+@media (max-width: 580px) {
+    div.p-text {
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 500px) {
+    div.question-info {
+        margin-top: 5%;
+    }
+
+    div.img-columns img {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+@media (min-width: 600px) {
+    div.headline {
+        top: 90%;
+    }
+}
+
+@media (max-width: 800px) {
+    p.lead span {
+        font-size: 1.25em !important;
+    }
+}
+
+@media (min-width: 900px) {
+    p.col-text {
+        font-size: 1em !important;
+    }    
+}
+
+@media (min-width: 100px) {
+    div.headline {
+        margin-left: 5%;
+    }
+}
+
 /* navbar */
 ul.submenu-options li { list-style-type: none; }
 div.navbar-brand { color: #ffffff; }
 a.nav-link { color: #ffffff; }
-
-.navbar { 
-    margin-bottom: 0% !important;
-    font-weight: 200 !important;
-    float: left;
-}
-
-nav.covid-message {
-    background-image: linear-gradient(to right bottom, #787878, #787878, #787878, #787878, #787878);
-    position: relative;
-    z-index: 10;
-    width: 30%;
-}
+button.navbar-toggler { color: #030303; }
 
 nav.options-bar {
     background-image: linear-gradient(to right bottom, #005a87, #0c4d77, #114068, #123458, #112849);
@@ -57,10 +108,9 @@ div.headline {
     pointer-events: none;
     position: absolute;
     line-height: 0.6;
-    margin-top: 33%;
     z-index: 10;
     right: 0;
-    top: 10%;
+    top: 75%;
     left: 0;
 }
 
@@ -164,7 +214,6 @@ p.col-text {
     font-family: "Barlow";
     text-align: justify;
     font-size: 1.2em;
-    padding-top: 20%;
 }
 
 div.selection .nav-link.active { background-color: #41AEE5; }
