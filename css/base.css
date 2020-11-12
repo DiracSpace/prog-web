@@ -1,47 +1,99 @@
-/* navbar */
-.navbar { 
-    margin-bottom: 0% !important;
-    font-weight: 200 !important;
-    float: left;
+@media (max-width: 400px) {
+    div.headline {
+        top: 80% !important;
+        line-height: normal !important;
+    }
+
+    div.headline h2.jumbo-text {
+        font-size: 1.5em !important;
+    }
+
+    p.lead span {
+        font-size: 1.5em !important;
+    }
 }
 
-nav.covid-message {
-    height: 5% !important;
-    background: gray;
-    position: relative;
-    z-index: 10;
-    width: 30%;
+@media (max-width: 500px) {
+    div.img-columns img {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
 }
+
+@media (max-width: 580px) {
+    div.p-text {
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 500px) {
+    div.question-info {
+        margin-top: 5%;
+    }
+
+    div.img-columns img {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+@media (min-width: 600px) {
+    div.headline {
+        top: 90%;
+    }
+}
+
+@media (max-width: 800px) {
+    p.lead span {
+        font-size: 1.25em !important;
+    }
+}
+
+@media (min-width: 900px) {
+    p.col-text {
+        font-size: 1em !important;
+    }    
+}
+
+@media (min-width: 100px) {
+    div.headline {
+        margin-left: 5%;
+    }
+}
+
+/* navbar */
+ul.submenu-options li { list-style-type: none; }
+div.navbar-brand { color: #ffffff; }
+a.nav-link { color: #ffffff; }
+button.navbar-toggler { color: #030303; }
 
 nav.options-bar {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(17, 40, 73, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background-image: linear-gradient(to right bottom, #005a87, #0c4d77, #114068, #123458, #112849);
     position: relative;
     z-index: 10;
-    width: 70%;
+    width: 100%;
 }
 
 ul.submenu-options { 
     margin-bottom: 0% !important;
+    float: right;
     display: flex; 
 }
 
-a.nav-link { color: #ffffff; }
-ul.submenu-options li { list-style-type: none; }
-div.navbar-brand { color: #ffffff; }
-
 /* header */
+span.carousel-icon { background-color: #112849; }
 .carousel .carousel-item {
     padding-bottom: 5% !important;
-    position: relative;
     height: 600px !important;
+    position: relative;
 }
   
 div.carousel-item img {
+    min-height: 600px !important;
     position: absolute;
     object-fit: cover;
-    min-height: 600px !important;
-    top: 0;
     left: 0;
+    top: 0;
 }
 
 a.carousel-control-btn {
@@ -49,25 +101,23 @@ a.carousel-control-btn {
     width: 5% !important;
 }
 
-span.carousel-icon { background-color: #112849; }
-
+/* carousel overlay text */
 div.headline {
+    pointer-events: none;
     position: absolute;
     line-height: 0.6;
-    margin-top: 33%;
-    top: 10%;
-    left: 0;
-    right: 0;
     z-index: 10;
-    pointer-events: none;
+    right: 0;
+    top: 75%;
+    left: 0;
 }
 
 h2.jumbo-text {
     font-family: "Bebas Neue";
     text-transform: uppercase;
     color: #ffffff;
-    margin-top: 2%;
     margin-bottom: 0;
+    margin-top: 2%;
 }
 
 p.lead span {
@@ -80,29 +130,25 @@ p.lead span {
 }
 
 /* body */
+div.message span { font-weight: bolder; }
+div.message p { font-weight: lighter; }
+
 hr.separator {
     background-color: #112849;
     margin-top: 3%;
     height: 0.2vw;
-    width: 10vw;
+    width: 15vw;
 }
 
 div.message {
     font-family: "Noto Sans TC";
     text-align: center;
     font-style: normal;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
-
-div.message p { font-weight: lighter; }
-div.message span { font-weight: bolder; }
 
 /* button */
-div.btn-banner {
-    text-align: center;
-    padding-top: 5vw;
-}
-
+div.btn-banner { padding-top: 5vw; }
 div.btn-banner button {
     background: url(/img/btnBanner.png) no-repeat;
     transition: box-shadow 0.3s linear;
@@ -152,29 +198,53 @@ div.btn-banner button:hover:before {
     width: 100%;
     height: 100%;
 }
-/* button */
 
-div.gen-obj { padding-top: 2vw; }
-div.gen-obj img {
-    margin-right: 10px;
-    width: 525px;
-    height: 235px;
-    float: left;
+/* career information */
+li.page-item { background-color: #ffffff;}
+ul.profile-text li {
+    font-family: "Pontano Sans";
+    font-size: 1em;
 }
 
-div.gen-obj p {
+div.restrain {
+    margin-top: 5%;
+    padding-right: 4%;
+    padding-left: 4%;
+}
+
+p.col-text {
+    font-family: "Barlow";
     text-align: justify;
-    font-family: "Pontano Sans";
     font-size: 1.2em;
 }
 
-div.img-text {
-    background-color: darkgray;
-    margin-top: 2vw;
-    padding-top: 3vw;
-    height: 600px;
-    width: 100%;
+div.selection .nav-link.active { background-color: #41AEE5; }
+div.selection li {
+    font-family: "Pontano Sans";
+    background-color: #112849;
 }
+
+div.jumbotron {
+    background-image: url("/img/esmepw.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: none !important;
+    background-size: 100%;
+    margin-top: 5%;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+div.container li {
+    font-family: "Pontano Sans";
+    font-weight: lighter;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+/* campo laboral*/
+div.title h3 { font-size: 2.5em; }
+div.title p { font-size: 1.2em; }
 
 div.title {
     padding-bottom: 3vw;
@@ -182,32 +252,104 @@ div.title {
     padding-top: 2vw;
 }
 
-div.title h3 { font-size: 2.5em; }
-div.title p { font-size: 1.2em; }
-
 div.title hr {
+    margin-bottom: 5%;
     height: 0.2vw;
     width: 30vw;
-    margin-bottom: 5%;
 }
 
-section { margin-bottom: 5%; }
-
-a.list-group-item { background-color: #ffffff }
-a.list-group-item:hover { background-color: #112849; color: #ffffff; }
+/* faq */
 a.list-group-item.active { background-color: #112849 !important; color: #ffffff; }
+a.list-group-item:hover { background-color: #112849; color: #ffffff; }
+a.list-group-item { background-color: #ffffff }
 
+a.sm-ph-tab.nav-link.active { background-color: #112849 !important; color: #ffffff; }
+li.nav-item a.sm-ph-tab { color: #030303; }
+li.nav-item a.sm-ph-tab:hover { background-color: #112849; color: #ffffff; }
 
-span.square {
-    background: #112849;
-    float: right;
-    width: 100px;
-    height: 100px;
+p.job-text {
+    font-family: "Pontano Sans";
+    text-align: justify;
+}
+
+ul.faq-list li {
+    color: #030303;
+    text-align: left;
 }
 
 /* footer */
+footer.page-footer a { text-decoration: underline; }
 footer { background-color: #112849 !important; }
-a.questions-suggestions { text-decoration: underline; }
 
 /* modal */
+div.modal-body .modal-text-center { text-align: center; }
 div.modal-header h5 { font-size: 1.8em; }
+div.modal-body p { margin-bottom: 5%; }
+div.close-btn { margin-top: 1%; }
+.info-underline { text-decoration: underline; }
+
+div.close-btn button {
+    background-color: #ffffff;
+    border-radius: 20%;
+    height: 2em;
+    width: 2em;
+}
+
+button.close span {
+    width: 2em;
+    height: 2em;
+}
+
+div.modal-body {
+    position: relative;
+    z-index: 3;
+}
+
+div.image {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+}
+
+div.image img {
+    height: 400px;
+    width: 400px;
+}
+
+/* CONCURSOS CSS */
+/* header */
+div.header-concursos {
+    background-color: #F5F5F5;
+    background-image: url("/img/concursos.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 30vw;
+    width: 100%;
+    overflow: hidden;
+}
+
+h3.hashtag {
+    font-family: "Barlow";
+    margin-bottom: 0%;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+h3.hashtag i {
+    -webkit-text-stroke: 1px transparent;
+    font-style: normal !important;
+    color: #030303;
+    font-weight: bold;
+}
+
+section.tabs ul.nav li a { color: #030303; }
+section.tabs ul.nav li a:hover { border-bottom: #0c4d77; }
+ul.nav { margin-top: 5%; }
+ul.nav li:active { text-decoration: #3A86F8 underline !important; }
+
+div.tab-content-cards {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}

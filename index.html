@@ -20,50 +20,47 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pontano+Sans" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Display" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/4be3e68216.js" crossorigin="anonymous"></script>
     <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet" />
 </head>
 
 <body>
     <!-- start of page -->
     <header>
-        <!-- covid-19 message -->
-        <nav class="navbar navbar-default covid-message" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <div class="navbar-brand">
-                        <img src="img/heart.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                        <span>Cuídate contra el covid-19</span>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!-- end -->
         <!-- navbar options -->
-        <nav class="navbar navbar-default options-bar" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-
+        <nav class="navbar navbar-expand-lg navbar-default options-bar" role="navigation">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-options"
+                    aria-controls="mobile-options" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="material-icons menu">menu</span>
+                </button>
+                <div class="collapse navbar-collapse" id="mobile-options">
+                    <div class="navbar-header">
+                        <a class="navbar-brand">
+                            <img src="/img/Tecnologico_de_el_Mante_logo.png" width="80" height="50" alt="">
+                        </a>
+                    </div>
+                    <ul class="submenu-options">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/sites/egresados.html">Egresados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/sites/eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/sites/concursos.html">Concursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Plan de Estudios</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="submenu-options">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/sites/egresados.html">Egresados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/sites/eventos.html">Eventos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/sites/concursos.html">Concursos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Plan de Estudios</a>
-                    </li>
-                </ul>
             </div>
         </nav>
         <!-- end -->
@@ -73,7 +70,7 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="/img/120888772_1278861439151808_1272664044669923535_o.jpg"
+                    <img class="d-block w-100" src="/img/87783424_3323944384288944_2480279425153761280_o.jpg"
                         alt="First slide">
                 </div>
                 <div class="carousel-item">
@@ -82,6 +79,18 @@
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="/img/88017297_1077757325928888_5316881509120999424_o.jpg"
+                        alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/img/88106556_1077763242594963_6922714303002836992_o.jpg"
+                        alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/img/53889010_1668045466674422_4184788349631856640_o.jpg"
+                        alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/img/76602161_1894986273980339_5233919495629701120_o.jpg"
                         alt="Third slide">
                 </div>
             </div>
@@ -118,32 +127,191 @@
         <!-- end -->
         <!-- button banner -->
         <div class="container btn-banner">
-            <button type="button" class="btn btn-secondary btn-lg btn-block shadow p-3 mb-5 bg-white rounded"></button>
+            <button id="infographic-btn" type="button"
+                class="btn btn-secondary btn-lg btn-block shadow p-3 mb-5 bg-white rounded"></button>
         </div>
         <!-- end -->
     </section>
     <section class="vision-perfgraduates">
+        <div class="container selection">
+            <ul class="nav nav-pills nav-fill" id="info-career" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="mission-tab" data-toggle="tab" data href="#mission" role="tab"
+                        aria-controls="mision" aria-selected="true">Misión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="vision'tab" data-toggle="tab" data href="#vision" role="tab"
+                        aria-controls="vision" aria-selected="false">Visión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="gen-objective-tab" data-toggle="tab" data href="#gen-objective" role="tab"
+                        aria-controls="objetivo general" aria-selected="false">Objetivo General</a>
+                </li>
+            </ul>
+        </div>
         <!-- image and text -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 gen-obj">
-                    <img class="img-fluid" src="img/88106556_1077763242594963_6922714303002836992_o.jpg" />
-                    <div class="container">
-                        <p>
-                            Formar profesionistas en Ingeniería en Sistemas Computacionales capaces de identificar y
-                            delimitar problemas relacionados con el procesamiento de información, la innovación y el
-                            desarrollo tecnológico, estructurar e implementar sistemas y soluciones,
-                            con habilidades de autoaprendizaje y trabajo en equipo, apoyados en herramientas, estándares
-                            y
-                            métodos científicos, conscientes del impacto de su ejercicio profesional en la sociedad.
-                        </p>
+        <div class="restrain">
+            <div class="content">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                    <img class="img-fluid img-thumbnail" src="img/mision.jpg" />
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 p-text">
+                                    <p class="col-text">
+                                        Formar profesionistas en Ingeniería en Sistemas Computacionales capaces de
+                                        identificar y
+                                        delimitar problemas relacionados con el procesamiento de información, la
+                                        innovación
+                                        y el
+                                        desarrollo tecnológico, estructurar e implementar sistemas y soluciones,
+                                        con habilidades de autoaprendizaje y trabajo en equipo, apoyados en
+                                        herramientas,
+                                        estándares
+                                        y
+                                        métodos científicos, conscientes del impacto de su ejercicio profesional en la
+                                        sociedad.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                    <img class="img-fluid img-thumbnail" src="img/vision.jpg" />
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 p-text">
+                                    <p class="col-text">
+                                        Ser un programa educativo dinámico, que responda a los requerimientos locales,
+                                        nacionales y globales, que tome en consideración los avances y tendencias de
+                                        desarrollo tecnológico, que posibilite la formación académica y personal de
+                                        profesionistas capaces y comprometidos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="gen-objective" role="tabpanel" aria-labelledby="gen-objective-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                    <img class="img-fluid img-thumbnail" src="img/objetivo general.jpg" />
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 p-text">
+                                    <p class="col-text">
+                                        Formar profesionistas líderes, analíticos, críticos y creativos, con visión
+                                        estratégica y amplio sentido ético, capaces de diseñar, implementar y
+                                        administrar
+                                        infraestructura computacional para aportar soluciones innovadoras en beneficio
+                                        de la
+                                        sociedad, en un contexto global, multidisciplinario y sustentable.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- end -->
         <!-- img-text -->
-        <div class="img-text"></div>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="perfil-ingreso-tab" data-toggle="tab" href="#ingreso" role="tab"
+                            aria-controls="ingreso" aria-selected="true">Perfil de Ingreso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="perfil-egreso-tab" data-toggle="tab" href="#egreso" role="tab"
+                            aria-controls="egreso" aria-selected="false">Perfil de Egreso</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="ingreso" role="tabpanel" aria-labelledby="ingreso-tab">
+                        <ul class="profile-text">
+                            <li>
+                                <p>
+                                    Facilidad matemática para comprender conceptos y proponer soluciones a problemas
+                                    relacionados con aspectos aritméticos, algebraicos y geométricos.
+                                </p>
+                            </li>
+                            <li>
+                                Habilidad verbal para comprender, analizar, interpretar, abstraer y manejar conceptos
+                                expresados mediante lenguaje.
+                            </li>
+                            <li>
+                                Capacidad para estudiar períodos largos y continuos.
+                            </li>
+                            <li>
+                                Habilidad y responsabilidad para trabajar en equipo.
+                            </li>
+                            <li>
+                                Deseos de interés por la competitividad, por buscar la excelencia en su formación
+                                escolar.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="egreso" role="tabpanel" aria-labelledby="egreso-tab">
+                        <ul class="profile-text">
+                            <li>
+                                <p>
+                                    Diseñar, configurar y administrar redes computacionales aplicando las normas y
+                                    estándares vigentes.
+                                </p>
+                            </li>
+                            <li>
+                                Desarrollar, implementar y administrar software de sistemas o de aplicación que cumpla
+                                con los estándares de calidad con el fin de apoyar la productividad y competitividad de
+                                las organizaciones.
+                            </li>
+                            <li>
+                                Coordinar y participar en proyectos interdisciplinarios.
+                            </li>
+                            <li>
+                                Diseñar e implementar interfaces hombre‐máquina y máquina‐máquina para la automatización
+                                de sistemas.
+                            </li>
+                            <li>
+                                Identificar y comprender las tecnologías de hardware para proponer, desarrollar y
+                                mantener aplicaciones eficientes.
+                            </li>
+                            <li>
+                                Diseñar, desarrollar y administrar bases de datos conforme a requerimientos definidos,
+                                normas organizacionales de manejo y seguridad de la información, utilizando tecnologías
+                                emergentes.
+                            </li>
+                            <li>
+                                Integrar soluciones computacionales con diferentes tecnologías, plataformas o
+                                dispositivos.
+                            </li>
+                            <li>
+                                Desarrollar una visión empresarial para detectar áreas de oportunidad que le permitan
+                                emprender y desarrollar proyectos aplicando las tecnologías de la información y
+                                comunicación.
+                            </li>
+                            <li>
+                                Desempeñar sus actividades profesionales considerando los aspectos legales, éticos,
+                                sociales y de desarrollo sustentable.
+                            </li>
+                            <li>
+                                Poseer habilidades metodológicas de investigación que fortalezcan el desarrollo
+                                cultural, científico y tecnológico en el ámbito de sistemas computacionales y
+                                disciplinas afines.
+                            </li>
+                            <li>
+                                Seleccionar y aplicar herramientas matemáticas para el modelado, diseño y desarrollo de
+                                tecnología computacional.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- end -->
     </section>
     <section class="workfield">
@@ -156,18 +324,18 @@
             </p>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12 img-columns">
-                    <img class="img-thumbnail" src="img/accenture-logo-edited.png" />
+            <div class="row four-column-img">
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 img-columns">
+                    <img class="img-fluid img-thumbnail" src="img/accenture-logo-edited.png" />
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 img-columns">
-                    <img class="img-thumbnail" src="img/ibm-logo-edited.png" />
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 img-columns">
+                    <img class="img-fluid img-thumbnail" src="img/ibm-logo-edited.png" />
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <img class="img-thumbnail" src="img/unnamed-removebg-preview.png" />
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 img-columns">
+                    <img class="img-fluid img-thumbnail" src="img/unnamed-removebg-preview.png" />
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <img class="img-thumbnail" src="img/NEORIS.Logo-Black.png" />
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 img-columns">
+                    <img class="img-fluid img-thumbnail" src="img/NEORIS.Logo-Black.png" />
                 </div>
             </div>
         </div>
@@ -177,29 +345,207 @@
             <h3>Preguntas frecuentes (FAQ's)</h3>
             <hr />
             <div class="row">
-                <div class="col-4">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-sm-none d-md-block">
                     <div class="list-group" id="list-tab" role="tablist">
-                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
-                            href="#list-home" role="tab" aria-controls="home">¿Cómo puedo contactarlos?</a>
-                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
-                            href="#list-profile" role="tab" aria-controls="profile">¿Qué documentos ocupo para
-                            inscripción?</a>
-                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
-                            href="#list-messages" role="tab" aria-controls="messages">¿Dónde se encuentran ubicados?</a>
-                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-                            href="#list-settings" role="tab" aria-controls="settings">¿Cómo puedo llegar?</a>
+                        <a class="list-group-item list-group-item-action active" id="list-serviciosocial-list"
+                            data-toggle="list" href="#list-servicio-social" role="tab"
+                            aria-controls="servicio-social">Trámite del Servicio Social</a>
+                        <a class="list-group-item list-group-item-action" id="list-preinscripcion-list"
+                            data-toggle="list" href="#list-preinscripcion" role="tab"
+                            aria-controls="profile">Preinscripción</a>
+                        <a class="list-group-item list-group-item-action" id="list-residencias-list" data-toggle="list"
+                            href="#list-residencias" role="tab" aria-controls="residencias">Residencias
+                            Profesionales</a>
+                        <a class="list-group-item list-group-item-action" id="list-titulacion-list" data-toggle="list"
+                            href="#list-titulacion" role="tab" aria-controls="titulacion">Titulación</a>
+                        <a class="list-group-item list-group-item-action" id="list-trabajo-list" data-toggle="list"
+                            href="#list-trabajo" role="tab" aria-controls="trabajo">Campo de Trabajo</a>
+                        <a class="list-group-item list-group-item-action" id="list-concursos-list" data-toggle="list"
+                            href="#list-concursos" role="tab" aria-controls="concursos">Concursos</a>
+                        <a class="list-group-item list-group-item-action" id="list-viajes-list" data-toggle="list"
+                            href="#list-viajes" role="tab" aria-controls="viajes">Viajes</a>
+                        <a class="list-group-item list-group-item-action" id="list-requisitos-list" data-toggle="list"
+                            href="#list-requisitos" role="tab" aria-controls="requisitos">Requisitos previos</a>
+                        <a class="list-group-item list-group-item-action" id="list-ubicacion-list" data-toggle="list"
+                            href="#list-ubicacion" role="tab" aria-controls="ubicacion">Ubicación</a>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-none d-sm-block d-md-none">
+                    <ul class="nav nav-pills nav-fill">
+                        <li class="nav-item">
+                            <a class="nav-link active sm-ph-tab" id="list-serviciosocial-list" data-toggle="list"
+                                href="#list-servicio-social" role="tab" aria-controls="servicio-social">Trámite del
+                                Servicio Social</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sm-ph-tab" id="list-preinscripcion-list" data-toggle="list"
+                                href="#list-preinscripcion" role="tab" aria-controls="profile">Preinscripción</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sm-ph-tab" id="list-residencias-list" data-toggle="list"
+                                href="#list-residencias" role="tab" aria-controls="residencias">Residencias
+                                Profesionales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sm-ph-tab" id="list-titulacion-list" data-toggle="list"
+                                href="#list-titulacion" role="tab" aria-controls="titulacion">Titulación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sm-ph-tab" id="list-trabajo-list" data-toggle="list" href="#list-trabajo"
+                                role="tab" aria-controls="trabajo">Campo de Trabajo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sm-ph-tab" id="list-concursos-list" data-toggle="list"
+                                href="#list-concursos" role="tab" aria-controls="concursos">Concursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sm-ph-tab" id="list-viajes-list" data-toggle="list" href="#list-viajes"
+                                role="tab" aria-controls="viajes">Viajes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sm-ph-tab" id="list-requisitos-list" data-toggle="list"
+                                href="#list-requisitos" role="tab" aria-controls="requisitos">Requisitos previos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sm-ph-tab" id="list-ubicacion-list" data-toggle="list"
+                                href="#list-ubicacion" role="tab" aria-controls="ubicacion">Ubicación</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 question-info">
                     <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="list-home" role="tabpanel"
-                            aria-labelledby="list-home-list">Información</div>
-                        <div class="tab-pane fade" id="list-profile" role="tabpanel"
-                            aria-labelledby="list-profile-list">Información</div>
-                        <div class="tab-pane fade" id="list-messages" role="tabpanel"
-                            aria-labelledby="list-messages-list">Información</div>
-                        <div class="tab-pane fade" id="list-settings" role="tabpanel"
-                            aria-labelledby="list-settings-list">Información</div>
+                        <div class="tab-pane fade show active" id="list-servicio-social" role="tabpanel"
+                            aria-labelledby="list-home-list">
+                            <h4>Servicio Social</h4>
+                            <hr />
+                            <ul class="faq-list">
+                                <li>Curso de ofimática terminado (constancia)</li>
+                                <li>Actividades extra escolares finalizadas (constancia)</li>
+                                <li>Informe Final de Actividad del Servicio Social</li>
+                                <li>Plan de Trabajo para Prestadores del Servicio Social</li>
+                                <li>Solicitud de Servicio Social</li>
+                            </ul>
+                            <p class="ss-contact">
+                                Contacto para más información: <a class="info-underline"
+                                    href="mailto:ewon@itsmante.edu.mx" target="_blank">Luis Wong</a>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="list-preinscripcion" role="tabpanel"
+                            aria-labelledby="list-profile-list">
+                            <h4>Preinscripción</h4>
+                            <hr />
+                            <ul class="faq-list">
+                                <li>Llenar la solicitud de examen de admisión</li>
+                                <li>Pagar el examen de admisión <span class="info-underline">$700</span> (incluye examen
+                                    CENEVAL y curso propedéutico)</li>
+                                <li>Copia del certificado de Bachillerato ó constancia de Terminación de Estudios ó
+                                    Historial Académico a la fecha</li>
+                                <li>Copia del Acta de Nacimiento</li>
+                                <li>2 fotografías tamaño infantil (blanco y negro)</li>
+                                <li>Copia del Comprobante de Domicilio</li>
+                                <li>Copia de la CURP</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="list-residencias" role="tabpanel"
+                            aria-labelledby="list-messages-list">
+                            <h4>Documentación para Residencias Profesionales</h4>
+                            <hr />
+                            <ul class="faq-list">
+                                <li>Proceso de Residencia Profesional</li>
+                                <li>Anexo &#8553;&#8553;&#8550;. Reporte preliminar de Residencia Profesional</li>
+                            </ul>
+                            <p>Listado de Competencias</p>
+                            <ul class="faq-list">
+                                <li>Anexo &#8553;&#8553;&#8551;. Estructura del reporte final de Residencia Profesional
+                                </li>
+                                <li>Anexo &#8553;&#8553;&#8552;. Formato de Evaluación y seguimiento de reporte de
+                                    Residencia Profesional</li>
+                                <li>Anexo &#8553;&#8553;&#8553;. Formato de Evaluación de reporte de Residencia
+                                    Profesional</li>
+                                <li>Memoria de Veranos</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="list-titulacion" role="tabpanel"
+                            aria-labelledby="list-titulacion-list">
+                            <h4>Documentación para Titulación</h4>
+                            <hr />
+                            <ul class="faq-list">
+                                <li>Carta de No Adeudos</li>
+                                <li>Manual de Titulación</li>
+                                <li>Solicitud de Registro de Título y Expedición de Cédula Profesional</li>
+                                <li>Solicitud de Titulación</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="list-trabajo" role="tabpanel"
+                            aria-labelledby="list-trabajo-list">
+                            <h4>Campo de Trabajo</h4>
+                            <hr />
+                            <p class="job-text">
+                                Los Ingenieros en Sistemas Computacionales pueden desempeñarse en cualquier organización
+                                pública
+                                o privada donde se desee tener control de procesos por medio de sistemas
+                                computacionales.
+                                Puedes ver el campo de trabajo de un ingeniero en sistemas en <a class="info-underline"
+                                    href="https://www.occ.com.mx" target="_blank">occmundial</a>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="list-concursos" role="tabpanel"
+                            aria-labelledby="list-concursos-list">
+                            <h4>Concursos</h4>
+                            <hr />
+                            <p class="job-text">
+                                La carrera de ingenieria en sistemas computacionales se distingue por la participación
+                                de sus alumnos
+                                en múltiples concursos,algunos de estos concursos son:
+                            </p>
+                            <ul class="faq-list">
+                                <li>ICPC</li>
+                                <li>COTACYT</li>
+                                <li>TamCoder</li>
+                                <li>Certamen Estatal Creatividad e Innovación Tecnológica</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="list-viajes" role="tabpanel" aria-labelledby="list-viajes-list">
+                            <h4>¡Realizamos viajes!</h4>
+                            <hr />
+                            <p class="job-text">
+                                Los alumnos de la carrera realizan viajes a distintas partes del país, principalmente a
+                                aquellas ciudades
+                                en donde la demanda de trabajo es mas alta. Hacemos esto para conocer distintas empresas
+                                y ver
+                                su entorno
+                                laborar, los requisitos necesarios, las oportunidades para ejercer y crecer
+                                profesionalmente. Estos
+                                viajes son para alumnos a partir de <span class="info-underline">4to semestre</span>.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="list-requisitos" role="tabpanel"
+                            aria-labelledby="list-requisitos-list">
+                            <h4>¿Requisitos previos?</h4>
+                            <hr />
+                            <p class="job-text">
+                                No, En tu primer semestre cursarás las materias de fundamentos de programación para
+                                desarrollar
+                                más tu lógica y siempre tendrás a tus docentes y compañeros de otros semestres que te
+                                apoyarán
+                                para cualquier duda en tus materias.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="list-ubicacion" role="tabpanel"
+                            aria-labelledby="list-ubicacion-list">
+                            <h4>¿Cómo llegar?</h4>
+                            <hr />
+                            <p class="job-text">
+                                El Instituto Tecnológico Superior de El Mante cuenta con transporte escolar para
+                                facilitar a sus alumnos el trasladado a
+                                la institución en
+                                distintos horarios de entrada y salida, puedes consultarlos <a href="#"
+                                    id="routes-redirect">aquí</a>. La ubicación de la escuela puedes verificarla
+                                con Google Maps haciendo click en la dirección: <a href="#" id="maps-redirect">K.m 6.7,
+                                    México
+                                    85, 89930 Quintero, Tamps.</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -237,7 +583,8 @@
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contacto</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a>Coordinador</a>
+                            <a class="contacto-ing" href="mailto:hflores@itsmante.edu.mx" target="_blank">Ing. Héctor
+                                Flores</a>
                         </li>
                     </ul>
                 </div>
@@ -245,27 +592,27 @@
             </div>
         </div>
         <div class="footer-copyright text-center py-3">
-            ©2020 Copyright Tec Mante
+            ©2020 Copyright Instituto Tecnológico Superior de El Mante
         </div>
     </footer>
     <!-- Footer -->
     <!-- modal -->
     <div class="modal fade" id="questions" tabindex="-1" role="dialog" aria-labelledby="QuestionsModal"
         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="QuestionsModal">Más información</h5>
+                <div class="container-fluid close-btn">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>
+                    <h3 class="modal-text-center">Más información</h3>
+                    <p class="modal-text-center">
                         Envía tus dudas utilizando el formulario que se encuentra a continuación y se te respondera a la
                         brevedad. También puedes contactarnos vía teléfonica o por correo eletrónico.
                     </p>
-                    <div class="row">
+                    <div class="row front">
                         <div class="col">
                             <form class="needs-validation" novalidate>
                                 <div class="form-group">
@@ -296,10 +643,13 @@
                         </div>
                         <div class="col">
                             <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <label for="exampleFormControlTextarea1">Descripción</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
                             </div>
                         </div>
+                    </div>
+                    <div class="image">
+                        <img class="img-fluid" src="img/burritoGris.png" />
                     </div>
                 </div>
                 <div class="modal-footer">

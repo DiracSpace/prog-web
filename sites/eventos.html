@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Eventos</title>
+    <title>ITSM - Eventos</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link data-rh="true" rel="icon" href="../img/cropped-favicon-180x180.png" />
     <meta name="authors" content="aqui metemos los nombres del equipo" />
@@ -12,22 +13,29 @@
     <!-- external css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../css/concursos.css" />
+    <link rel="stylesheet" href="../css/base.css" />
     <!-- google fonts & icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Condensed" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pontano+Sans" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Display" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/4be3e68216.js" crossorigin="anonymous"></script>
     <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <!-- navbar options -->
-        <nav class="navbar navbar-default options-bar" role="navigation">
-            <div class="container">
+    <!-- navbar options -->
+    <nav class="navbar navbar-expand-lg navbar-default options-bar" role="navigation">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-options"
+                aria-controls="mobile-options" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="material-icons menu">menu</span>
+            </button>
+            <div class="collapse navbar-collapse" id="mobile-options">
                 <div class="navbar-header">
                     <div class="navbar-brand">
                         <img src="../img/heart.png" width="30" height="30" alt="">
@@ -53,194 +61,206 @@
                 </ul>
                 <h3 class="hashtag">#YOSOY<i class="outline-text">ISC</i></h3>
             </div>
-        </nav>
-        <!-- end -->
-        <!-- menu -->
-        <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" id="pills-sociales-tab" data-toggle="pill" href="#sociales-tab" role="tab"
-                    aria-controls="sociales-tab" aria-selected="true">Sociales</a>
+        </div>
+    </nav>
+    <!-- end -->
+    <section class="header-web">
+        <div class="header-concursos"></div>
+    </section>
+    <section class="tabs">
+        <ul class="nav justify-content-center" id="concursos-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="programacion-tab" data-toggle="tab" href="#programacion" role="tab"
+                    aria-controls="programacion" aria-selected="true"><i class="fas fa-school"></i> Académicos</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-academicos-tab" data-toggle="pill" href="#pills-academicos" role="tab"
-                    aria-controls="pills-academicos" aria-selected="false">Académicos</a>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="matematicas-tab" data-toggle="tab" href="#matematicas" role="tab"
+                    aria-controls="matematicas" aria-selected="false"><i class="fas fa-user-friends"></i> Sociales</a>
             </li>
         </ul>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="sociales-tab" role="tabpanel"
-                aria-labelledby="pills-sociales-tab">
-                <div class="container">
-                    <p>
-                        Cada año se realizan congresos dirigidos hacia las carreras correspodientes en las cuales se les
-                        dan talleres, conferencias o cursos para el conocimiento del estudiante.
-                    </p>
-                    <!-- triple columns -->
-                    <div class="container tri-col-images">
-                        <div class="row py-5">
-                            <div class="col text-center">
-                                <img class="circular-images" src="../../img/ibm-logo-edited.png" width="180px"
-                                    height="125px" />
-                                <p>Something</p>
-                            </div>
-                            <div class="col text-center">
-                                <img class="circular-images" src="../../img/ibm-logo-edited.png" width="180px"
-                                    height="125px" />
-                                <p>Something</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end -->
-                </div>
-                <!-- carrousel -->
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="container">
-                                <div class="grid">
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="container">
-                                <div class="grid">
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="container">
-                                <div class="grid">
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-thumbnail" src="../img/ibm-logo-edited.png" />
-                                    </div>
+    </section>
+    <section class="tabs-info">
+        <div class="container-fluid">
+            <div class="tab-content container">
+                <div class="tab-pane active" id="academicos" role="tabpanel" aria-labelledby="academicos-tab">
+                    <div class="card text-center tab-content-cards">
+                        <div class="card-body">
+                            <div class="media">
+                                <img src="../img/accenture-logo-edited.png"
+                                    class="align-self-center mr-3 img-fluid img-thumbnail" alt="...">
+                                <div class="media-body">
+                                    <p class="text-justify">
+                                        El Concurso Internacional de Programación Universitaria es un concurso de
+                                        programación algorítmica para estudiantes universitarios. Equipos de tres, que
+                                        representan a su universidad, trabajan para resolver los problemas más reales
+                                        del mundo, fomentando la colaboración, la creatividad, la innovación y la
+                                        capacidad de desempeñarse bajo presión.
+                                    </p>
+                                    <button type="button" class="btn btn-outline-dark">Dark</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="material-icons md-64">skip_previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="material-icons md-64">skip_next</span>
-                    </a>
+                    <div class="card text-center tab-content-cards">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="media-body">
+                                    <p class="mt-0 mb-1 text-justify">
+                                        Tiene como propósito identificar, fortalecer, incentivar y
+                                        reconocer las habilidades de programación de jóvenes estudiantes de carreras a
+                                        nivel Licenciatura del Estado.
+                                    </p>
+                                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                                </div>
+                                <img src="../img/accenture-logo-edited.png"
+                                    class="align-self-center ml-3 img-fluid img-thumbnail" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-center tab-content-cards">
+                        <div class="card-body">
+                            <div class="media">
+                                <img src="../img/accenture-logo-edited.png"
+                                    class="align-self-center mr-3 img-fluid img-thumbnail" alt="...">
+                                <div class="media-body">
+                                    <p class="text-justify">
+                                        The URI Online Judge es un proyecto que está siendo desarrollado por el
+                                        Departamento de Ciencias de la Computación de la Universidad URI. El objetivo
+                                        principal del proyecto es proporcionar práctica de programación e intercambio de
+                                        conocimientos.
+                                    </p>
+                                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-center tab-content-cards">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="media-body">
+                                    <p class="mt-0 mb-1 text-justify">
+                                        Plataforma Mexicana de Jueceo en línea de problemas de programación. OmegaUp
+                                        permite practicar el resolver problemas de algoritmos, crear tus propios
+                                        problemas, participar en concursos de entrenamiento y crear tus propios
+                                        concursos de programación en línea.
+                                    </p>
+                                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                                </div>
+                                <img src="../img/accenture-logo-edited.png"
+                                    class="align-self-center ml-3 img-fluid img-thumbnail" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-center tab-content-cards">
+                        <div class="card-body">
+                            <div class="media">
+                                <img src="../img/accenture-logo-edited.png"
+                                    class="align-self-center mr-3 img-fluid img-thumbnail" alt="...">
+                                <div class="media-body">
+                                    <p class="text-justify">
+                                        Con el apoyo de diversas instituciones de educación en el estado se organizará
+                                        el Torneo Estatal de Programación 2020, con el objetivo de promover e incentivar
+                                        a estudiantes a participar en competencias nacionales e internacionales como el
+                                        de la OMI (Olimpiada Mexicana de Informática) y la ICPC (International
+                                        Collegiate Programming Contest).
+                                    </p>
+                                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- end -->
-            </div>
-            <div class="tab-pane fade" id="pills-academicos" role="tabpanel" aria-labelledby="pills-academicos-tab">
-                <div class="container">
-                    <p>Académicos</p>
+                <div class="tab-pane" id="sociales" role="tabpanel" aria-labelledby="sociales-tab">
+                    <div class="card text-center tab-content-cards">
+                        <div class="card-body">
+                            <div class="media">
+                                <img src="../img/accenture-logo-edited.png"
+                                    class="align-self-center mr-3 img-fluid img-thumbnail" alt="...">
+                                <div class="media-body">
+                                    <p class="text-justify">
+                                        El Concurso Internacional de Programación Universitaria es un concurso de
+                                        programación algorítmica para estudiantes universitarios. Equipos de tres, que
+                                        representan a su universidad, trabajan para resolver los problemas más reales
+                                        del mundo, fomentando la colaboración, la creatividad, la innovación y la
+                                        capacidad de desempeñarse bajo presión.
+                                    </p>
+                                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-center tab-content-cards">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="media-body">
+                                    <p class="mt-0 mb-1 text-justify">
+                                        Tiene como propósito identificar, fortalecer, incentivar y
+                                        reconocer las habilidades de programación de jóvenes estudiantes de carreras a
+                                        nivel Licenciatura del Estado.
+                                    </p>
+                                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                                </div>
+                                <img src="../img/accenture-logo-edited.png"
+                                    class="align-self-center ml-3 img-fluid img-thumbnail" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-center tab-content-cards">
+                        <div class="card-body">
+                            <div class="media">
+                                <img src="../img/accenture-logo-edited.png"
+                                    class="align-self-center mr-3 img-fluid img-thumbnail" alt="...">
+                                <div class="media-body">
+                                    <p class="text-justify">
+                                        The URI Online Judge es un proyecto que está siendo desarrollado por el
+                                        Departamento de Ciencias de la Computación de la Universidad URI. El objetivo
+                                        principal del proyecto es proporcionar práctica de programación e intercambio de
+                                        conocimientos.
+                                    </p>
+                                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-center tab-content-cards">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="media-body">
+                                    <p class="mt-0 mb-1 text-justify">
+                                        Plataforma Mexicana de Jueceo en línea de problemas de programación. OmegaUp
+                                        permite practicar el resolver problemas de algoritmos, crear tus propios
+                                        problemas, participar en concursos de entrenamiento y crear tus propios
+                                        concursos de programación en línea.
+                                    </p>
+                                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                                </div>
+                                <img src="../img/accenture-logo-edited.png"
+                                    class="align-self-center ml-3 img-fluid img-thumbnail" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-center tab-content-cards">
+                        <div class="card-body">
+                            <div class="media">
+                                <img src="../img/accenture-logo-edited.png"
+                                    class="align-self-center mr-3 img-fluid img-thumbnail" alt="...">
+                                <div class="media-body">
+                                    <p class="text-justify">
+                                        Con el apoyo de diversas instituciones de educación en el estado se organizará
+                                        el Torneo Estatal de Programación 2020, con el objetivo de promover e incentivar
+                                        a estudiantes a participar en competencias nacionales e internacionales como el
+                                        de la OMI (Olimpiada Mexicana de Informática) y la ICPC (International
+                                        Collegiate Programming Contest).
+                                    </p>
+                                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- end -->
-    </header>
-    <!-- end -->
+    </section>
     <!-- Footer -->
     <footer class="page-footer">
         <div class="container text-center">
@@ -273,7 +293,8 @@
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contacto</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a>Coordinador</a>
+                            <a class="contacto-ing" href="mailto:hflores@itsmante.edu.mx" target="_blank">Ing. Héctor
+                                Flores</a>
                         </li>
                     </ul>
                 </div>
@@ -281,9 +302,73 @@
             </div>
         </div>
         <div class="footer-copyright text-center py-3">
-            ©2020 Copyright Tec Mante
+            ©2020 Copyright Instituto Tecnológico Superior de El Mante
         </div>
     </footer>
+    <!-- Footer -->
+    <!-- modal -->
+    <div class="modal fade" id="questions" tabindex="-1" role="dialog" aria-labelledby="QuestionsModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="container-fluid close-btn">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="modal-text-center">Más información</h3>
+                    <p class="modal-text-center">
+                        Envía tus dudas utilizando el formulario que se encuentra a continuación y se te respondera a la
+                        brevedad. También puedes contactarnos vía teléfonica o por correo eletrónico.
+                    </p>
+                    <div class="row front">
+                        <div class="col">
+                            <form class="needs-validation" novalidate>
+                                <div class="form-group">
+                                    <label for="name">Nombre</label>
+                                    <input type="text" class="form-control" id="name"
+                                        placeholder="Nombre(s) Apellido(s)">
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="user-email">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="user-email"
+                                        placeholder="nombre@ejemplo.com">
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Asunto</label>
+                                    <input type="text" class="form-control" id="business"
+                                        placeholder="Documentos para inscripción">
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Descripción</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img class="img-fluid" src="../img/burritoGris.png" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-outline-success">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- end -->
     <!-- external js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -293,7 +378,7 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
     <!-- internal js -->
-    <script type="text-javascript" src="../js/concurso.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
 </body>
 
 </html>
